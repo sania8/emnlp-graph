@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------------
+   Apple Human Interface palette.
+
    The site runs two colour contexts:
 
-   1. LIGHT  — the page itself: soft pink background, deep plum text.
-   2. DARK   — cards and panels: plum surfaces, light text.
+   1. LIGHT  — the page itself: iOS grouped background, black labels.
+   2. DARK   — cards and panels: iOS dark-mode elevated surfaces, white labels.
 
    Both share the same token names. The dark context re-declares those tokens
    lower down, scoped to any element with a `bg-surface*` class, so every
@@ -15,22 +17,21 @@
 
 :root {
   /* --- Light context (the page) --- */
-  --background: #fff0f7;
-  /* Slightly deeper pink for full-width section bands. */
-  --tint: #ffe4f1;
-  --foreground: #2a1430;
-  --muted: #6b5570;
-  --border: #f3d2e4;
-  --accent: #b51c66;
-  --accent-dim: #e2669f;
+  --background: #f2f2f7;   /* systemGroupedBackground */
+  --tint: #e5e5ea;         /* systemGray5: full-width section bands */
+  --foreground: #000000;   /* label */
+  --muted: #6c6c70;        /* secondaryLabel (opaque equivalent) */
+  --border: #c6c6c8;       /* separator */
+  --accent: #007aff;       /* systemBlue */
+  --accent-dim: #5ac8fa;   /* systemTeal */
 
-  /* --- Dark context (cards and panels) --- */
-  --surface: #251b34;
-  --surface-raised: #32264a;
+  /* --- Cards and panels: white on the grey grouped background --- */
+  --surface: #ffffff;         /* secondarySystemGroupedBackground */
+  --surface-raised: #f9f9fb;  /* slightly lifted white */
 
   /* Semantic colours, light-context values. */
-  --warn: #9a5b00;
-  --danger: #b3241c;
+  --warn: #ff9500;   /* systemOrange */
+  --danger: #ff3b30; /* systemRed */
 }
 
 /*
@@ -43,13 +44,7 @@
   the card, so headings that carry no explicit text class still flip to light.
 */
 [class*="bg-surface"] {
-  --foreground: #f7ecf5;
-  --muted: #b9a4c6;
-  --border: #3d2f56;
-  --accent: #ff7ab8;
-  --accent-dim: #ffa8d2;
-  --warn: #ffc46b;
-  --danger: #ff8585;
+  /* Light mode everywhere: cards keep the same tokens as the page. */
   color: var(--foreground);
 }
 
@@ -126,7 +121,10 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  /* San Francisco on Apple devices, Geist / system elsewhere. */
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+    var(--font-sans), system-ui, sans-serif;
+  letter-spacing: -0.011em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -135,19 +133,14 @@ body {
   color: #fff;
 }
 
-/* Atmospheric grid. Pink on the light page, lilac once inside a dark card. */
+/* Atmospheric grid. Blue on the light page, brighter blue once inside a dark card. */
 .bg-grid {
   background-image:
-    linear-gradient(to right, rgba(181, 28, 102, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(181, 28, 102, 0.08) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 122, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 122, 255, 0.07) 1px, transparent 1px);
   background-size: 72px 72px;
 }
 
-[class*="bg-surface"] .bg-grid {
-  background-image:
-    linear-gradient(to right, rgba(255, 122, 184, 0.09) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 122, 184, 0.09) 1px, transparent 1px);
-}
 
 @media (prefers-reduced-motion: reduce) {
   *,

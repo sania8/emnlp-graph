@@ -1,0 +1,83 @@
+/* Hover chooser on the conference card: "By event" / "By research area".
+   Pure CSS show/hide so it works with mouse hover, keyboard focus and a tap-to-pin on touch screens. */
+
+.cm-wrap { position: relative; height: 100%; transition: transform 0.5s cubic-bezier(0.32, 0.72, 0, 1); }
+.cm-wrap:hover { transform: translateY(-8px); } /* the card and the chooser lift together */
+.cm-wrap:hover, .cm-wrap:focus-within { z-index: 30; } /* chooser sits above the neighbouring card */
+
+.cm-pop {
+  position: absolute;
+  inset: 0.75rem;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px) scale(0.985);
+  transition:
+    opacity 0.25s ease,
+    transform 0.45s cubic-bezier(0.32, 0.72, 0, 1),
+    visibility 0s linear 0.45s;
+}
+
+/* wide screens: the chooser spreads over both cards, so each tile gets room for a big illustration */
+@media (min-width: 1024px) {
+  .cm-pop { right: calc(-100% - 1.25rem); }
+}
+
+/* small hover-intent delay so the card does not flip when the pointer only passes over it */
+.cm-wrap:hover .cm-pop,
+.cm-wrap:focus-within .cm-pop,
+.cm-pop[data-open="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0.12s, 0.12s, 0s;
+}
+
+/* mini graph: clusters pop in one after another, edges flow like the main graph */
+.cm-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+  transform: scale(0.35);
+  transition: opacity 0.35s ease, transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.cm-wrap:hover .cm-node,
+.cm-wrap:focus-within .cm-node,
+.cm-pop[data-open="true"] .cm-node {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: calc(0.18s + var(--i, 0) * 45ms);
+}
+.cm-tile:hover .cm-node,
+.cm-tile:focus-visible .cm-node {
+  transform: scale(1.1);
+  transition-delay: 0s;
+}
+
+.cm-flow {
+  stroke-dasharray: 5 4;
+  animation: cm-dash 1.8s linear infinite;
+}
+@keyframes cm-dash {
+  to { stroke-dashoffset: -18; }
+}
+
+.cm-tile { transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease; }
+.cm-tile:hover { transform: translateY(-2px); }
+.cm-tile:active { transform: scale(0.99); }
+
+/* the close button is only needed on touch screens, where nothing hovers */
+@media (hover: hover) {
+  .cm-close { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cm-wrap:hover { transform: none; }
+  .cm-pop, .cm-node, .cm-tile { transition: none; }
+  .cm-flow { animation: none; }
+  .cm-node { opacity: 1; transform: none; }
+}

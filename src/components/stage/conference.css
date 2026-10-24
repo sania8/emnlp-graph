@@ -1,0 +1,44 @@
+/* ---------------------------------------------------------------------------
+   Conference graphs: all styling for ConferenceHub + ConferenceStage.
+
+   Everything is scoped under `.apple-light`, so nothing here touches the rest
+   of the site or globals.css. It carries its own Apple light palette, so the
+   text stays readable whatever globals.css contains.
+--------------------------------------------------------------------------- */
+
+/* Apple light palette (also beats any global [class*="bg-surface"] dark rule). */
+.apple-light,
+.apple-light [class*="bg-surface"] {
+  --background: #f2f2f7;      /* systemGroupedBackground */
+  --tint: #e5e5ea;            /* systemGray5 */
+  --foreground: #000000;      /* label */
+  --muted: #6c6c70;           /* secondaryLabel */
+  --border: #c6c6c8;          /* separator */
+  --accent: #007aff;          /* systemBlue */
+  --accent-dim: #5ac8fa;      /* systemTeal */
+  --surface: #ffffff;         /* cards */
+  --surface-raised: #f9f9fb;
+  --warn: #ff9500;            /* systemOrange */
+  --danger: #ff3b30;          /* systemRed */
+  color: var(--foreground);
+}
+.apple-light { background: #f2f2f7; }
+
+/* Hub: circular reveal when a conference opens. */
+@keyframes st-in {
+  from { clip-path: circle(0% at var(--ox) var(--oy)); }
+  to   { clip-path: circle(150% at var(--ox) var(--oy)); }
+}
+
+/* Stage: Apple HIG motion, focus ring, reduced motion. */
+@keyframes st-sheet { from { opacity: 0; transform: scale(.94) translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes st-fade  { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+.st-in { transition: transform .35s cubic-bezier(.32,.72,0,1); transform-box: fill-box; transform-origin: center; }
+.st-node:hover .st-in  { transform: scale(1.05); }
+.st-node:active .st-in { transform: scale(.97); }
+.st-node:focus-visible { outline: 4px solid var(--accent); outline-offset: 8px; border-radius: 28px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .st-anim, .st-in { animation: none !important; transition: none !important; }
+}

@@ -448,7 +448,9 @@ export default function GraphExplorer({
         return;
       }
       const finals = new Map<string, { x: number; y: number }>();
-      vis.forEach((n) => finals.set(n.id(), { ...n.position() }));
+      vis.forEach((n) => {
+        finals.set(n.id(), { ...n.position() });
+      });
       const bb = vis.boundingBox({});
       const cx = bb.x1 + bb.w / 2;
       const cyy = bb.y1 + bb.h / 2;
