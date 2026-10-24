@@ -101,9 +101,9 @@ export default function ConferenceSearch({ items, onPick }: { items: SearchItem[
   };
 
   return (
-    <div ref={boxRef} className="relative w-[640px] max-w-full shrink-0">
+    <div ref={boxRef} className="relative w-[560px] max-w-full shrink-0">
       <div
-        className="flex min-h-[68px] items-center gap-4 rounded-full px-6 ring-1 ring-black/10 transition-shadow focus-within:ring-2 focus-within:ring-accent"
+        className="flex min-h-[58px] items-center gap-4 rounded-full px-6 ring-1 ring-black/10 transition-shadow focus-within:ring-2 focus-within:ring-accent"
         style={{ background: "rgba(120,120,128,0.16)" }}
       >
         <svg width="28" height="28" viewBox="0 0 22 22" aria-hidden="true" className="shrink-0 text-muted">
@@ -125,7 +125,7 @@ export default function ConferenceSearch({ items, onPick }: { items: SearchItem[
           aria-label="Search the conference graph"
           role="combobox"
           aria-expanded={open}
-          className="min-w-0 flex-1 bg-transparent text-3xl text-foreground outline-none placeholder:text-muted"
+          className="min-w-0 flex-1 bg-transparent text-base text-foreground outline-none placeholder:text-muted"
         />
         {q ? (
           <button
@@ -181,7 +181,7 @@ export default function ConferenceSearch({ items, onPick }: { items: SearchItem[
                 <span className="shrink-0 rounded-full bg-black/5 px-3 py-0.5 text-xl font-medium text-muted">{KIND_LABEL[it.kind]}</span>
                 <span className="truncate text-3xl font-semibold text-foreground">{it.label}</span>
               </span>
-              {it.sub && <span className="max-w-[45%] shrink-0 truncate text-2xl text-muted">{it.sub}</span>}
+              {it.sub && <span className="max-w-[45%] shrink-0 truncate text-xl text-muted">{it.sub}</span>}
             </button>
           ))}
         </div>
