@@ -151,22 +151,22 @@ export default function ConferenceSearch({ items, onPick }: { items: SearchItem[
       {open && (
         <div
           ref={listRef}
-          className="absolute left-0 right-0 top-full z-50 mt-2 max-h-[70vh] overflow-y-auto rounded-3xl bg-surface p-2 shadow-[0_24px_60px_-18px_rgba(0,0,0,0.35)] ring-1 ring-black/10"
+          className="absolute right-0 top-full z-50 mt-2 max-h-[70vh] w-[max(100%,640px)] max-w-[92vw] overflow-y-auto rounded-3xl bg-surface p-2 shadow-[0_24px_60px_-18px_rgba(0,0,0,0.35)] ring-1 ring-black/10"
           role="listbox"
         >
           {topic ? (
             <button
               onClick={() => setTopic(null)}
-              className="flex w-full items-center gap-2 px-5 pb-1 pt-3 text-left text-xl font-semibold uppercase tracking-wider text-accent"
+              className="flex w-full items-center gap-2 px-4 pb-1 pt-3 text-left text-base font-semibold uppercase tracking-wider text-accent"
             >
               ‹ {topic.label} · {rows.length}
             </button>
           ) : (
-            <p className="px-5 pb-1 pt-3 text-xl font-semibold uppercase tracking-wider text-muted">
+            <p className="px-4 pb-1 pt-3 text-base font-semibold uppercase tracking-wider text-muted">
               {q ? "Results" : "Areas & topics"} · {rows.length}
             </p>
           )}
-          {rows.length === 0 && <p className="px-5 py-4 text-3xl text-muted">No match. Try another word.</p>}
+          {rows.length === 0 && <p className="px-4 py-4 text-xl text-muted">No match. Try another word.</p>}
           {rows.map((it, idx) => (
             <button
               key={it.id}
@@ -175,13 +175,13 @@ export default function ConferenceSearch({ items, onPick }: { items: SearchItem[
               aria-selected={idx === act}
               onMouseEnter={() => setAct(idx)}
               onClick={() => choose(it)}
-              className={`flex w-full items-center justify-between gap-4 rounded-2xl px-5 py-3 text-left transition-colors ${idx === act ? "bg-accent/12" : ""}`}
+              className={`flex w-full items-start justify-between gap-4 rounded-2xl px-4 py-2.5 text-left transition-colors ${idx === act ? "bg-accent/12" : ""}`}
             >
-              <span className="flex min-w-0 items-center gap-3">
-                <span className="shrink-0 rounded-full bg-black/5 px-3 py-0.5 text-xl font-medium text-muted">{KIND_LABEL[it.kind]}</span>
-                <span className="truncate text-3xl font-semibold text-foreground">{it.label}</span>
+              <span className="flex min-w-0 flex-1 items-start gap-3">
+                <span className="mt-0.5 shrink-0 rounded-full bg-black/5 px-2.5 py-0.5 text-base font-medium text-muted">{KIND_LABEL[it.kind]}</span>
+                <span className="min-w-0 break-words text-xl font-semibold text-foreground">{it.label}</span>
               </span>
-              {it.sub && <span className="max-w-[45%] shrink-0 truncate text-xl text-muted">{it.sub}</span>}
+              {it.sub && <span className="mt-0.5 max-w-[42%] shrink-0 break-words text-right text-base text-muted">{it.sub}</span>}
             </button>
           ))}
         </div>
