@@ -879,12 +879,13 @@ export default function ConferenceStage({ graph, onExit }: { graph: Graph; onExi
                 <div className="flex items-center gap-4 pr-14">
                   <Avatar src={selPerson.d.photo} name={selPerson.label} size={compact ? 56 : 84} />
                   <div className="min-w-0">
-                    <h4 className="truncate text-3xl font-bold leading-tight tracking-tight">{selPerson.label}</h4>
+                   <h4 className="break-words text-3xl font-bold leading-tight tracking-tight">{selPerson.label}</h4>
                     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
                       <span className="rounded-full bg-accent/20 px-3 py-0.5 text-xl font-medium text-accent">{selInfo.role}</span>
-                      {selInfo.insts.length > 0 && (
-                        <span className="truncate text-xl text-muted">{selInfo.insts	.join(" · ")}</span>
-                      )}
+                      <span className="rounded-full bg-accent/20 px-3 py-0.5 text-xl font-medium text-accent">{selInfo.role}</span>
+                        {selInfo.insts.length > 0 && (
+                        <span className="min-w-0 break-words text-xl text-muted">{selInfo.insts.join(" · ")}</span>
+                        )}
                     </div>
                   </div>
                 </div>
