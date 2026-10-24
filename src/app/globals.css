@@ -96,26 +96,8 @@
 }
 
 html {
-  /* Master size dial: every rem-based text and spacing value scales from here. */
-  font-size: 25px;
-}
-
-@media (max-width: 1280px) {
-  html {
-    font-size: 23px;
-  }
-}
-
-@media (max-width: 1024px) {
-  html {
-    font-size: 21px;
-  }
-}
-
-@media (max-width: 640px) {
-  html {
-    font-size: 19px;
-  }
+  /* 25px on a 1920px-wide screen, scaling with the window width. */
+  font-size: clamp(14px, 1.302vw, 32px);
 }
 
 body {
