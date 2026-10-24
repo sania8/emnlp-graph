@@ -1,8 +1,6 @@
 import ConferenceHub from "@/components/stage/ConferenceHub";
 import { getGraph } from "@/lib/graph";
 
-export const instant = false;
-
 export async function generateMetadata() {
   const g = await getGraph();
   return { title: `${g?.meta.conference ?? "Conference"} people graph` };

@@ -1,5 +1,4 @@
-import { promises as fs } from "fs";
-import path from "path";
+import graphData from "../../public/data/conference-graph.json";
 
 type El = { data: Record<string, any> };
 export type Elements = { nodes: El[]; edges: El[] };
@@ -8,12 +7,9 @@ export type Graph = {
   elements: Elements;
 };
 
+// The JSON is bundled at build time, so no filesystem access is needed at runtime (Cloudflare Workers has none).
 export async function getGraph(): Promise<Graph | null> {
-  try {
-    return JSON.parse(await fs.readFile(path.join(process.cwd(), "public/data/conference-graph.json"), "utf8"));
-  } catch {
-    return null;
-  }
+  return graphData as unknown as Graph;
 }
 
 /** Small slice for the homepage hero: best-connected people plus the institutions and tracks around them. */
