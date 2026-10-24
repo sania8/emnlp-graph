@@ -66,8 +66,8 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
   return (
     <div className="apple-light">
       <div className="mx-auto flex min-h-[70vh] w-full max-w-[90rem] flex-col justify-center px-6 py-16 text-center">
-        <p className="text-3xl font-medium text-muted">Conference graphs</p>
-        <h1 className="mt-3 text-6xl font-bold tracking-tight sm:text-7xl">Pick a conference to explore</h1>
+        <p className="text-2xl font-medium text-muted">Conference graphs</p>
+        <h1 className="mt-3 text-5xl font-bold tracking-tight sm:text-6xl">Pick a conference to explore</h1>
         <p className="mx-auto mt-4 max-w-3xl text-4xl text-muted">
           See how talks, speakers and research topics connect.
         </p>
@@ -82,7 +82,7 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
                   if (window.matchMedia("(hover: none)").matches) setPinned((p) => !p);
                   else openWith("programme", e.clientX, e.clientY);
                 }}
-                className="group relative flex h-full w-full min-h-[38rem] flex-col justify-between overflow-hidden rounded-3xl bg-surface p-12 text-left shadow-[0_2px_20px_-8px_rgba(0,0,0,0.18)] ring-1 ring-black/5 transition-all duration-500 hover:shadow-[0_24px_70px_-24px_rgba(0,122,255,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="group relative flex h-full w-full min-h-[32rem] flex-col justify-between overflow-hidden rounded-3xl bg-surface p-10 text-left shadow-[0_2px_20px_-8px_rgba(0,0,0,0.18)] ring-1 ring-black/5 transition-all duration-500 hover:shadow-[0_24px_70px_-24px_rgba(0,122,255,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <div aria-hidden="true" className="absolute inset-x-0 top-0 h-2 bg-accent" />
                 <div>
@@ -96,11 +96,11 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
                       Available
                     </span>
                   )}
-                  <h2 className="mt-6 text-7xl font-bold leading-[1.05] tracking-tight xl:text-8xl">
+                  <h2 className="mt-6 text-6xl font-bold leading-[1.05] tracking-tight xl:text-7xl">
                     {meta.conference}
                   </h2>
-                  <p className="mt-6 text-4xl text-accent">{meta.venue}</p>
-                  <p className="mt-2 text-4xl text-muted">{meta.dates}</p>
+                  <p className="mt-6 text-3xl text-accent">{meta.venue}</p>
+                  <p className="mt-2 text-3xl text-muted">{meta.dates}</p>
                 </div>
                 {SHOW_STATS && (
                   <dl className="mt-10 grid grid-cols-3 gap-4">
@@ -112,7 +112,7 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
                     ))}
                   </dl>
                 )}
-                <span className="mt-8 flex min-h-[88px] items-center justify-center rounded-2xl bg-accent text-4xl font-semibold text-white transition-transform duration-300 group-hover:scale-[1.01]">
+                <span className="mt-8 flex min-h-[72px] items-center justify-center rounded-2xl bg-accent text-3xl font-semibold text-white transition-transform duration-300 group-hover:scale-[1.01]">
                   Explore the graph
                 </span>
               </button>
@@ -126,7 +126,7 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
               />
             </div>
           ) : (
-            <div className="rounded-3xl bg-surface p-12 text-3xl ring-1 ring-black/5">
+            <div className="rounded-3xl bg-surface p-10 text-3xl ring-1 ring-black/5">
               No dataset yet. Run <code>npm run kg</code>, then reload.
             </div>
           )}
@@ -135,10 +135,10 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
           <div
             aria-disabled
             style={{ ["--accent" as any]: "#AF52DE" } as React.CSSProperties}
-            className="flex min-h-[38rem] flex-col justify-between rounded-3xl border-2 border-dashed border-edge bg-transparent p-12"
+            className="flex min-h-[38rem] flex-col justify-between rounded-3xl border-2 border-dashed border-edge bg-transparent p-10"
           >
             <div>
-              <span className="inline-block rounded-full bg-accent/12 px-6 py-2 text-3xl font-medium text-accent">
+              <span className="inline-block rounded-full bg-accent/12 px-5 py-1.5 text-2xl font-medium text-accent">
                 Upcoming
               </span>
               <h2 className="mt-6 text-7xl font-bold leading-[1.05] tracking-tight xl:text-8xl">NeurIPS 2026</h2>
@@ -146,7 +146,7 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
               <p className="mt-2 text-4xl text-muted">6–12 December 2026</p>
               <p className="mt-4 text-2xl text-muted">Satellites: Atlanta · Paris, 9–13 December</p>
             </div>
-            <p className="mt-10 rounded-2xl px-6 py-8 text-center text-4xl font-medium text-muted" style={{ background: FILL2 }}>
+            <p className="mt-10 rounded-2xl px-6 px-6 py-6 text-center text-3xl font-medium text-muted" style={{ background: FILL2 }}>
               Graph coming soon
             </p>
           </div>
