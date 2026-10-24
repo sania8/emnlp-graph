@@ -101,12 +101,13 @@ export default function ConferenceSearch({ items, onPick }: { items: SearchItem[
   };
 
   return (
-    <div ref={boxRef} className="relative w-[560px] max-w-full shrink-0">
+    <div ref={boxRef} className="relative w-[640px] max-w-full shrink-0">
+      {/* search bar: bigger bar and bigger buttons/icons, text size unchanged (text-base) */}
       <div
-        className="flex min-h-[58px] items-center gap-4 rounded-full px-6 ring-1 ring-black/10 transition-shadow focus-within:ring-2 focus-within:ring-accent"
+        className="flex min-h-[72px] items-center gap-4 rounded-full px-7 ring-1 ring-black/10 transition-shadow focus-within:ring-2 focus-within:ring-accent"
         style={{ background: "rgba(120,120,128,0.16)" }}
       >
-        <svg width="28" height="28" viewBox="0 0 22 22" aria-hidden="true" className="shrink-0 text-muted">
+        <svg width="36" height="36" viewBox="0 0 22 22" aria-hidden="true" className="shrink-0 text-muted">
           <circle cx="9.5" cy="9.5" r="6.5" fill="none" stroke="currentColor" strokeWidth="2.2" />
           <path d="m14.5 14.5 5 5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
         </svg>
@@ -135,14 +136,14 @@ export default function ConferenceSearch({ items, onPick }: { items: SearchItem[
               inRef.current?.focus();
             }}
             aria-label="Clear search"
-            className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-black/10 text-muted hover:bg-black/20"
+            className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-black/10 text-muted hover:bg-black/20"
           >
-            <svg width="14" height="14" viewBox="0 0 12 12" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 12 12" aria-hidden="true">
               <path d="M2 2l8 8M10 2 2 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
           </button>
         ) : (
-          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" className="shrink-0 text-muted">
+          <svg width="28" height="28" viewBox="0 0 20 20" aria-hidden="true" className="shrink-0 text-muted">
             <path d="m4 7 6 6 6-6" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         )}
@@ -151,7 +152,7 @@ export default function ConferenceSearch({ items, onPick }: { items: SearchItem[
       {open && (
         <div
           ref={listRef}
-          className="absolute right-0 top-full z-50 mt-2 max-h-[70vh] w-[max(100%,640px)] max-w-[92vw] overflow-y-auto rounded-3xl bg-surface p-2 shadow-[0_24px_60px_-18px_rgba(0,0,0,0.35)] ring-1 ring-black/10"
+          className="absolute right-0 top-full z-50 mt-2 max-h-[70vh] w-[max(100%,960px)] max-w-[94vw] overflow-y-auto rounded-3xl bg-surface p-2 shadow-[0_24px_60px_-18px_rgba(0,0,0,0.35)] ring-1 ring-black/10"
           role="listbox"
         >
           {topic ? (
