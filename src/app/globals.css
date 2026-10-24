@@ -1,26 +1,160 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   The site runs two colour contexts:
+
+   1. LIGHT  — the page itself: soft pink background, deep plum text.
+   2. DARK   — cards and panels: plum surfaces, light text.
+
+   Both share the same token names. The dark context re-declares those tokens
+   lower down, scoped to any element with a `bg-surface*` class, so every
+   `text-foreground` / `text-muted` / `border-edge` inside a card automatically
+   flips to its light-on-dark value. That is what prevents dark text landing on
+   a dark card.
+--------------------------------------------------------------------------- */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --- Light context (the page) --- */
+  --background: #fff0f7;
+  /* Slightly deeper pink for full-width section bands. */
+  --tint: #ffe4f1;
+  --foreground: #2a1430;
+  --muted: #6b5570;
+  --border: #f3d2e4;
+  --accent: #b51c66;
+  --accent-dim: #e2669f;
+
+  /* --- Dark context (cards and panels) --- */
+  --surface: #251b34;
+  --surface-raised: #32264a;
+
+  /* Semantic colours, light-context values. */
+  --warn: #9a5b00;
+  --danger: #b3241c;
+}
+
+/*
+  Dark context. Any card painted with a surface colour re-scopes the text and
+  border tokens for everything inside it.
+
+  The `color` declaration is essential: `body` resolves `var(--foreground)` to a
+  concrete dark value once, and children inherit that computed colour, not the
+  variable. Re-declaring `color` here forces the token to resolve again inside
+  the card, so headings that carry no explicit text class still flip to light.
+*/
+[class*="bg-surface"] {
+  --foreground: #f7ecf5;
+  --muted: #b9a4c6;
+  --border: #3d2f56;
+  --accent: #ff7ab8;
+  --accent-dim: #ffa8d2;
+  --warn: #ffc46b;
+  --danger: #ff8585;
+  color: var(--foreground);
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-tint: var(--tint);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-edge: var(--border);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* ---------------------------------------------------------------------
+     Type scale.
+
+     These override Tailwind's defaults so `text-sm`, `text-base` and friends
+     render larger WITHOUT touching padding, gaps or widths — raising the root
+     font size would scale all of those too. Adjust these numbers to make text
+     bigger or smaller on its own.
+
+     Line heights are unitless so they track whatever font size is set.
+  --------------------------------------------------------------------- */
+  --text-xs: 0.88rem;
+  --text-xs--line-height: 1.45;
+  --text-sm: 1.02rem;
+  --text-sm--line-height: 1.55;
+  --text-base: 1.16rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.32rem;
+  --text-lg--line-height: 1.55;
+  --text-xl: 1.48rem;
+  --text-xl--line-height: 1.45;
+  --text-2xl: 1.74rem;
+  --text-2xl--line-height: 1.35;
+  --text-3xl: 2.1rem;
+  --text-3xl--line-height: 1.25;
+  --text-4xl: 2.5rem;
+  --text-4xl--line-height: 1.18;
+  --text-5xl: 3.2rem;
+  --text-5xl--line-height: 1.1;
+  --text-6xl: 3.9rem;
+  --text-6xl--line-height: 1.05;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  /* Master size dial: every rem-based text and spacing value scales from here. */
+  font-size: 25px;
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 19px;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Atmospheric grid. Pink on the light page, lilac once inside a dark card. */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(181, 28, 102, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(181, 28, 102, 0.08) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+[class*="bg-surface"] .bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 122, 184, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 122, 184, 0.09) 1px, transparent 1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }

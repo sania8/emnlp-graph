@@ -1,0 +1,317 @@
+{
+  "classes": [
+    {
+      "slug": "bridge",
+      "label": "Bridge",
+      "samples": [
+        {
+          "source": "sample_0_6.png",
+          "image": "/projects/geospatial-ai/inference/bridge/sample-1-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/bridge/sample-1-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/bridge/sample-1-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/bridge/sample-1-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/bridge/sample-1-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_2_0.png",
+          "image": "/projects/geospatial-ai/inference/bridge/sample-2-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/bridge/sample-2-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/bridge/sample-2-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/bridge/sample-2-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/bridge/sample-2-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_4_14.png",
+          "image": "/projects/geospatial-ai/inference/bridge/sample-3-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/bridge/sample-3-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/bridge/sample-3-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/bridge/sample-3-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/bridge/sample-3-ground-truth-mask.webp"
+        }
+      ]
+    },
+    {
+      "slug": "cadastral",
+      "label": "Cadastral boundary",
+      "samples": [
+        {
+          "source": "sample_1_3.png",
+          "image": "/projects/geospatial-ai/inference/cadastral/sample-1-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/cadastral/sample-1-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/cadastral/sample-1-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/cadastral/sample-1-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/cadastral/sample-1-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_3_5.png",
+          "image": "/projects/geospatial-ai/inference/cadastral/sample-2-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/cadastral/sample-2-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/cadastral/sample-2-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/cadastral/sample-2-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/cadastral/sample-2-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_4_3.png",
+          "image": "/projects/geospatial-ai/inference/cadastral/sample-3-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/cadastral/sample-3-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/cadastral/sample-3-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/cadastral/sample-3-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/cadastral/sample-3-ground-truth-mask.webp"
+        }
+      ]
+    },
+    {
+      "slug": "rail-line",
+      "label": "Rail line",
+      "samples": [
+        {
+          "source": "sample_0_1.png",
+          "image": "/projects/geospatial-ai/inference/rail-line/sample-1-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/rail-line/sample-1-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/rail-line/sample-1-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/rail-line/sample-1-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/rail-line/sample-1-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_2_2.png",
+          "image": "/projects/geospatial-ai/inference/rail-line/sample-2-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/rail-line/sample-2-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/rail-line/sample-2-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/rail-line/sample-2-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/rail-line/sample-2-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_5_0.png",
+          "image": "/projects/geospatial-ai/inference/rail-line/sample-3-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/rail-line/sample-3-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/rail-line/sample-3-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/rail-line/sample-3-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/rail-line/sample-3-ground-truth-mask.webp"
+        }
+      ]
+    },
+    {
+      "slug": "road",
+      "label": "Road",
+      "samples": [
+        {
+          "source": "sample_0_2.png",
+          "image": "/projects/geospatial-ai/inference/road/sample-1-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/road/sample-1-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/road/sample-1-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/road/sample-1-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/road/sample-1-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_1_0.png",
+          "image": "/projects/geospatial-ai/inference/road/sample-2-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/road/sample-2-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/road/sample-2-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/road/sample-2-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/road/sample-2-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_3_2.png",
+          "image": "/projects/geospatial-ai/inference/road/sample-3-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/road/sample-3-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/road/sample-3-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/road/sample-3-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/road/sample-3-ground-truth-mask.webp"
+        }
+      ]
+    },
+    {
+      "slug": "sewer-line",
+      "label": "Sewer line",
+      "samples": [
+        {
+          "source": "sample_0_4.png",
+          "image": "/projects/geospatial-ai/inference/sewer-line/sample-1-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/sewer-line/sample-1-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/sewer-line/sample-1-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/sewer-line/sample-1-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/sewer-line/sample-1-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_1_6.png",
+          "image": "/projects/geospatial-ai/inference/sewer-line/sample-2-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/sewer-line/sample-2-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/sewer-line/sample-2-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/sewer-line/sample-2-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/sewer-line/sample-2-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_3_4.png",
+          "image": "/projects/geospatial-ai/inference/sewer-line/sample-3-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/sewer-line/sample-3-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/sewer-line/sample-3-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/sewer-line/sample-3-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/sewer-line/sample-3-ground-truth-mask.webp"
+        }
+      ]
+    },
+    {
+      "slug": "ulu",
+      "label": "ULU",
+      "samples": [
+        {
+          "source": "sample_3_6.png",
+          "image": "/projects/geospatial-ai/inference/ulu/sample-1-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/ulu/sample-1-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/ulu/sample-1-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/ulu/sample-1-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/ulu/sample-1-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_3_7.png",
+          "image": "/projects/geospatial-ai/inference/ulu/sample-2-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/ulu/sample-2-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/ulu/sample-2-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/ulu/sample-2-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/ulu/sample-2-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_5_2.png",
+          "image": "/projects/geospatial-ai/inference/ulu/sample-3-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/ulu/sample-3-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/ulu/sample-3-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/ulu/sample-3-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/ulu/sample-3-ground-truth-mask.webp"
+        }
+      ]
+    },
+    {
+      "slug": "water-line",
+      "label": "Water line",
+      "samples": [
+        {
+          "source": "sample_0_2.png",
+          "image": "/projects/geospatial-ai/inference/water-line/sample-1-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/water-line/sample-1-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/water-line/sample-1-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/water-line/sample-1-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/water-line/sample-1-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_1_3.png",
+          "image": "/projects/geospatial-ai/inference/water-line/sample-2-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/water-line/sample-2-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/water-line/sample-2-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/water-line/sample-2-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/water-line/sample-2-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_1_7.png",
+          "image": "/projects/geospatial-ai/inference/water-line/sample-3-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/water-line/sample-3-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/water-line/sample-3-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/water-line/sample-3-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/water-line/sample-3-ground-truth-mask.webp"
+        }
+      ]
+    },
+    {
+      "slug": "water-point",
+      "label": "Water point",
+      "samples": [
+        {
+          "source": "sample_1_2.png",
+          "image": "/projects/geospatial-ai/inference/water-point/sample-1-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/water-point/sample-1-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/water-point/sample-1-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/water-point/sample-1-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/water-point/sample-1-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_2_1.png",
+          "image": "/projects/geospatial-ai/inference/water-point/sample-2-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/water-point/sample-2-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/water-point/sample-2-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/water-point/sample-2-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/water-point/sample-2-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_2_7.png",
+          "image": "/projects/geospatial-ai/inference/water-point/sample-3-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/water-point/sample-3-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/water-point/sample-3-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/water-point/sample-3-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/water-point/sample-3-ground-truth-mask.webp"
+        }
+      ]
+    },
+    {
+      "slug": "water-polygon",
+      "label": "Water polygon",
+      "samples": [
+        {
+          "source": "sample_0_7.png",
+          "image": "/projects/geospatial-ai/inference/water-polygon/sample-1-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/water-polygon/sample-1-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/water-polygon/sample-1-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/water-polygon/sample-1-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/water-polygon/sample-1-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_2_5.png",
+          "image": "/projects/geospatial-ai/inference/water-polygon/sample-2-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/water-polygon/sample-2-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/water-polygon/sample-2-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/water-polygon/sample-2-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/water-polygon/sample-2-ground-truth-mask.webp"
+        },
+        {
+          "source": "sample_3_6.png",
+          "image": "/projects/geospatial-ai/inference/water-polygon/sample-3-image.webp",
+          "ground-truth": "/projects/geospatial-ai/inference/water-polygon/sample-3-ground-truth.webp",
+          "prediction": "/projects/geospatial-ai/inference/water-polygon/sample-3-prediction.webp",
+          "prediction-mask": "/projects/geospatial-ai/inference/water-polygon/sample-3-prediction-mask.webp",
+          "ground-truth-mask": "/projects/geospatial-ai/inference/water-polygon/sample-3-ground-truth-mask.webp"
+        }
+      ]
+    }
+  ],
+  "tiles": [
+    {
+      "id": "tile_0013_overlay",
+      "src": "/projects/geospatial-ai/tiles/tile_0013_overlay.webp",
+      "source": "tile_0013_overlay.png"
+    },
+    {
+      "id": "tile_0017_overlay",
+      "src": "/projects/geospatial-ai/tiles/tile_0017_overlay.webp",
+      "source": "tile_0017_overlay.png"
+    },
+    {
+      "id": "tile_0027_overlay",
+      "src": "/projects/geospatial-ai/tiles/tile_0027_overlay.webp",
+      "source": "tile_0027_overlay.png"
+    },
+    {
+      "id": "tile_0028_overlay",
+      "src": "/projects/geospatial-ai/tiles/tile_0028_overlay.webp",
+      "source": "tile_0028_overlay.png"
+    },
+    {
+      "id": "tile_0041_overlay",
+      "src": "/projects/geospatial-ai/tiles/tile_0041_overlay.webp",
+      "source": "tile_0041_overlay.png"
+    },
+    {
+      "id": "tile_0046_overlay",
+      "src": "/projects/geospatial-ai/tiles/tile_0046_overlay.webp",
+      "source": "tile_0046_overlay.png"
+    },
+    {
+      "id": "tile_0052_overlay",
+      "src": "/projects/geospatial-ai/tiles/tile_0052_overlay.webp",
+      "source": "tile_0052_overlay.png"
+    }
+  ],
+  "stitched": {
+    "src": "/projects/geospatial-ai/stitched-output.webp",
+    "source": "image (6).png",
+    "width": 2448,
+    "height": 2448
+  }
+}

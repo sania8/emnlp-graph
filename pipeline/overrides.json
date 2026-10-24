@@ -1,0 +1,12 @@
+{
+  "_note": "Affiliations stated in the official EMNLP 2026 speaker/panelist bios, where the page has no affiliation field.",
+  "Pascale Fung": {"affiliation": "Hong Kong University of Science & Technology"},
+  "Graham Neubig": {"affiliation": "Carnegie Mellon University"},
+  "Anna Korhonen": {"affiliation": "University of Cambridge"},
+  "Mohit Bansal": {"affiliation": "UNC Chapel Hill"},
+  "Verena Rieser": {"affiliation": "Google DeepMind"},
+  "Dirk Hovy": {"affiliation": "Bocconi University"},
+  "Lillian Lee": {"affiliation": "Cornell University"},
+  "Mor Geva": {"affiliation": "Tel Aviv University"},
+  "Raymond J. Mooney": {"affiliation": "University of Texas at Austin"}
+}

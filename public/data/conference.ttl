@@ -1,0 +1,1595 @@
+@prefix nk: <https://kg.local/conference#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+nk:person-aaron-mueller a nk:Person ;
+    rdfs:label "Aaron Mueller" ;
+    nk:colleagueOf nk:person-dhanya-sridhar,
+        nk:person-patrik-reizinger,
+        nk:person-shruti-joshi ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-causal-foundations-for-interpretability .
+
+nk:person-alan-ritter a nk:Person ;
+    rdfs:label "Alan Ritter" ;
+    nk:colleagueOf nk:person-david-ifeoluwa-adelani,
+        nk:person-sara-hooker,
+        nk:person-vinodkumar-prabhakaran,
+        nk:person-wei-xu ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-multilingual-multicultural-llms .
+
+nk:person-alberto-abad a nk:Person ;
+    rdfs:label "Alberto Abad" ;
+    nk:affiliatedWith nk:inst-inesc-id,
+        nk:inst-instituto-superior-tecnico ;
+    nk:affiliation "INESC-ID and Instituto Superior Técnico" ;
+    nk:colleagueOf nk:person-sweta-agrawal ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-demonstration-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/alberto_abad.jpg" ;
+    nk:profile "http://hlt.inesc-id.pt/~alberto/" .
+
+nk:person-ali-hurriyetoglu a nk:Person ;
+    rdfs:label "Ali Hürriyetoğlu" ;
+    nk:affiliatedWith nk:inst-enlighty-ai ;
+    nk:affiliation "Enlighty.ai" ;
+    nk:colleagueOf nk:person-fernando-batista ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-virtual-infrastructure-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/Hurriyetoglu-Ali-June-2025.jpeg" ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-ana-marasovic a nk:Person ;
+    rdfs:label "Ana Marasovic" ;
+    nk:affiliatedWith nk:inst-university-of-utah ;
+    nk:affiliation "University of Utah" ;
+    nk:colleagueOf nk:person-goran-glavas ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-tutorial-chairs ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-andre-freitas a nk:Person ;
+    rdfs:label "Andre Freitas" ;
+    nk:colleagueOf nk:person-jordan-meadows,
+        nk:person-lan-zhang,
+        nk:person-marco-valentino ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-autoformalization-mathematical-reasonin .
+
+nk:person-andre-martins a nk:Person ;
+    rdfs:label "André Martins" ;
+    nk:affiliatedWith nk:inst-instituto-superior-tecnico-university-of-lisbon ;
+    nk:affiliation "Instituto Superior Técnico, University of Lisbon" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-general-chair ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/andre_martins.jpg" ;
+    nk:profile "https://andre-martins.github.io/" .
+
+nk:person-anil-ramakrishna a nk:Person ;
+    rdfs:label "Anil Ramakrishna" ;
+    nk:affiliatedWith nk:inst-meta ;
+    nk:affiliation "Meta" ;
+    nk:colleagueOf nk:person-giuseppe-attanasio ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-ethics-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/anil.jpg" ;
+    nk:profile "https://anilkramakrishna.github.io/" .
+
+nk:person-anna-korhonen a nk:Person ;
+    rdfs:label "Anna Korhonen" ;
+    nk:affiliatedWith nk:inst-university-of-cambridge ;
+    nk:affiliation "University of Cambridge" ;
+    nk:confidence 0.9 ;
+    nk:photo "https://2026.emnlp.org/assets/images/keynotes/74ae062f-6771-4118-a72c-96d219e562b0.png" ;
+    nk:presents nk:talk-keynote-3-anna-korhonen .
+
+nk:person-anne-lauscher a nk:Person ;
+    rdfs:label "Anne Lauscher" ;
+    nk:affiliatedWith nk:inst-university-of-hamburg ;
+    nk:affiliation "University of Hamburg" ;
+    nk:colleagueOf nk:person-david-ifeoluwa-adelani,
+        nk:person-spandana-gella ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-diversity-and-inclusion-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/anne.jpg" ;
+    nk:profile "https://www.anne-lauscher.de" .
+
+nk:person-asad-basheer-sayeed a nk:Person ;
+    rdfs:label "Asad Basheer Sayeed" ;
+    nk:affiliatedWith nk:inst-university-of-gothenburg ;
+    nk:affiliation "University of Gothenburg" ;
+    nk:colleagueOf nk:person-giovanni-da-san-martino,
+        nk:person-jing-jiang,
+        nk:person-michael-white,
+        nk:person-xiaodan-zhu,
+        nk:person-xiaojun-wan ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-arr-may-2026-editors-in-chief ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/asad_sayeed.jpeg" ;
+    nk:profile "https://asayeed.github.io/" .
+
+nk:person-brigitta-ivanyi-bitter a nk:Person ;
+    rdfs:label "Brigitta Ivanyi-Bitter" ;
+    nk:colleagueOf nk:person-noemi-ligeti-nagy,
+        nk:person-veronika-lipp ;
+    nk:confidence 0.4 ;
+    nk:holds nk:role-visa-local-organizing-chairs ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-cheng-han-chiang a nk:Person ;
+    rdfs:label "Cheng-Han Chiang" ;
+    nk:affiliatedWith nk:inst-national-taiwan-university ;
+    nk:affiliation "National Taiwan University" ;
+    nk:colleagueOf nk:person-mike-zhang,
+        nk:person-yating-wu ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-workflow-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/cheng-han.png" ;
+    nk:profile "https://d223302.github.io/" .
+
+nk:person-christos-christodoulopoulos a nk:Person ;
+    rdfs:label "Christos Christodoulopoulos" ;
+    nk:affiliatedWith nk:inst-information-commissioner-s-office ;
+    nk:affiliation "Information Commissioner's Office" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-senior-program-chair ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/christos_christodoulopoulos.jpeg" ;
+    nk:profile "https://christos-c.com" .
+
+nk:person-chrysoula-zerva a nk:Person ;
+    rdfs:label "Chrysoula Zerva" ;
+    nk:affiliatedWith nk:inst-instituto-superior-tecnico-university-of-lisbon ;
+    nk:affiliation "Instituto Superior Técnico, University of Lisbon" ;
+    nk:colleagueOf nk:person-jun-suzuki,
+        nk:person-steffen-eger ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-workshop-chairs ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-desmond-elliott a nk:Person ;
+    rdfs:label "Desmond Elliott" ;
+    nk:affiliatedWith nk:inst-university-of-copenhagen ;
+    nk:affiliation "University of Copenhagen" ;
+    nk:colleagueOf nk:person-hung-yi-lee,
+        nk:person-jessy-li,
+        nk:person-sunipa-dev ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-program-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/desmond_emnlp.jpg" ;
+    nk:profile "https://elliottd.github.io/" .
+
+nk:person-dirk-hovy a nk:Person ;
+    rdfs:label "Dirk Hovy" ;
+    nk:affiliatedWith nk:inst-bocconi-university ;
+    nk:affiliation "Bocconi University" ;
+    nk:colleagueOf nk:person-lillian-lee,
+        nk:person-mor-geva,
+        nk:person-raymond-j-mooney ;
+    nk:confidence 0.9 ;
+    nk:panelistIn nk:talk-panel-new-missions-in-nlp-research ;
+    nk:photo "https://2026.emnlp.org/assets/images/panelists/dirk_hovy.jpg" .
+
+nk:person-elizabeth-salesky a nk:Person ;
+    rdfs:label "Elizabeth Salesky" ;
+    nk:colleagueOf nk:person-jindrich-libovicky,
+        nk:person-julie-kallini,
+        nk:person-sachin-kumar,
+        nk:person-tomasz-limisiewicz,
+        nk:person-valentin-hofmann ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-tokenization-for-large-language-models .
+
+nk:person-eran-hirsch a nk:Person ;
+    rdfs:label "Eran Hirsch" ;
+    nk:affiliatedWith nk:inst-bar-ilan-university ;
+    nk:affiliation "Bar-Ilan University" ;
+    nk:colleagueOf nk:person-yuki-arase ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-publicity-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/eran_hirsch.jpg" ;
+    nk:profile "https://eranhirs.github.io/" .
+
+nk:person-favour-y-aghaebe a nk:Person ;
+    rdfs:label "Favour Y Aghaebe" ;
+    nk:affiliatedWith nk:inst-university-of-sheffield ;
+    nk:affiliation "University of Sheffield" ;
+    nk:colleagueOf nk:person-nafise-sadat-moosavi ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-student-volunteer-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/favour_aghaebe.jpg" ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-gaurav-sahu a nk:Person ;
+    rdfs:label "Gaurav Sahu" ;
+    nk:affiliatedWith nk:inst-mila ;
+    nk:affiliation "Mila" ;
+    nk:colleagueOf nk:person-joydeep-biswas ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-ai-reviewing-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/prof_pic-800.webp" ;
+    nk:profile "https://demfier.github.io/" .
+
+nk:person-gholamreza-haffari a nk:Person ;
+    rdfs:label "Gholamreza Haffari" ;
+    nk:affiliatedWith nk:inst-monash-university ;
+    nk:affiliation "Monash University" ;
+    nk:colleagueOf nk:person-minghan-wang,
+        nk:person-pepa-atanasova ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-industry-track-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/reza.jpg" ;
+    nk:profile "https://rezahaffari.github.io/HomePage/HomePage.html" .
+
+nk:person-graham-neubig a nk:Person ;
+    rdfs:label "Graham Neubig" ;
+    nk:affiliatedWith nk:inst-carnegie-mellon-university ;
+    nk:affiliation "Carnegie Mellon University" ;
+    nk:confidence 0.9 ;
+    nk:photo "https://2026.emnlp.org/assets/images/keynotes/neubig-headshot-2021.jpg" ;
+    nk:presents nk:talk-keynote-2-graham-neubig .
+
+nk:person-hejie-cui a nk:Person ;
+    rdfs:label "Hejie Cui" ;
+    nk:colleagueOf nk:person-manling-li,
+        nk:person-sha-li,
+        nk:person-zihan-wang ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-failure-modes-in-agentic-ai-from-reprod .
+
+nk:person-hour-kaing a nk:Person ;
+    rdfs:label "Hour Kaing" ;
+    nk:affiliatedWith nk:inst-nict ;
+    nk:affiliation "NICT" ;
+    nk:colleagueOf nk:person-raj-dabre ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-website-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/hour_kaing_nict.jpg" ;
+    nk:profile "https://hour.github.io/" .
+
+nk:person-iryna-gurevych a nk:Person ;
+    rdfs:label "Iryna Gurevych" ;
+    nk:colleagueOf nk:person-mohit-bansal,
+        nk:person-shahram-khadivi,
+        nk:person-verena-rieser,
+        nk:person-yashar-mehdad ;
+    nk:confidence 0.4 ;
+    nk:moderates nk:talk-panel-ai-agents-in-the-real-world-capability-tru .
+
+nk:person-ivan-titov a nk:Person ;
+    rdfs:label "Ivan Titov" ;
+    nk:affiliatedWith nk:inst-edinburgh ;
+    nk:affiliation "Edinburgh" ;
+    nk:colleagueOf nk:person-luciana-benotti,
+        nk:person-nancy-chen ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-best-paper-award-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/ititov.jpg" ;
+    nk:profile "https://ivan-titov.org/" .
+
+nk:person-jia-xu a nk:Person ;
+    rdfs:label "Jia Xu" ;
+    nk:affiliatedWith nk:inst-rutgers-university ;
+    nk:affiliation "Rutgers University" ;
+    nk:colleagueOf nk:person-vlad-niculae ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-handbook-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/jia_xu.png" ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-jingyuan-sun a nk:Person ;
+    rdfs:label "Jingyuan Sun" ;
+    nk:colleagueOf nk:person-yang-cui,
+        nk:person-yifan-wang,
+        nk:person-yunhao-zhang ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-language-models-as-windows-into-human-l .
+
+nk:person-judith-holler a nk:Person ;
+    rdfs:label "Judith Holler" ;
+    nk:colleagueOf nk:person-vera-demberg ;
+    nk:confidence 0.4 ;
+    nk:presents nk:talk-workshop-multimodal-interaction-in-face-to-face- .
+
+nk:person-junjie-hu a nk:Person ;
+    rdfs:label "Junjie Hu" ;
+    nk:affiliatedWith nk:inst-university-of-wisconsin-madison ;
+    nk:affiliation "University of Wisconsin-Madison" ;
+    nk:colleagueOf nk:person-shaoxiong-ji ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-publication-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/junjie_hu.jpg" ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-matthias-galle a nk:Person ;
+    rdfs:label "Matthias Gallé" ;
+    nk:affiliatedWith nk:inst-cohere ;
+    nk:affiliation "Cohere" ;
+    nk:colleagueOf nk:person-nikos-aletras ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-sponsorship-chairs ;
+    nk:linkedin "https://www.linkedin.com/in/mgalle/" ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/mgalle.png" ;
+    nk:profile "https://www.linkedin.com/in/mgalle/" .
+
+nk:person-nizar-habash a nk:Person ;
+    rdfs:label "Nizar Habash" ;
+    nk:affiliatedWith nk:inst-new-york-university-abu-dhabi ;
+    nk:affiliation "New York University Abu Dhabi" ;
+    nk:confidence 0.8 ;
+    nk:presents nk:talk-workshop-fourth-arabic-natural-language-processi .
+
+nk:person-pascale-fung a nk:Person ;
+    rdfs:label "Pascale Fung" ;
+    nk:affiliatedWith nk:inst-hong-kong-university-of-science-technology ;
+    nk:affiliation "Hong Kong University of Science & Technology" ;
+    nk:confidence 0.9 ;
+    nk:photo "https://2026.emnlp.org/assets/images/keynotes/Portrait%20Pascale%20Fung.png" ;
+    nk:presents nk:talk-keynote-1-pascale-fung .
+
+nk:talk-workshop-10th-workshop-on-automated-knowledge-ba a nk:Talk ;
+    rdfs:label "10th Workshop on Automated Knowledge Base Construction (AKBC)" ;
+    nk:about nk:topic-knowledge-bases,
+        nk:topic-llms,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "F8" ;
+    nk:summary "While Large Language Models (LLMs) have revolutionized NLP, they remain prone to hallucinations, reasoning “mode-collapse” in open-ended generation, and a lack of factual provenance. The Automated Knowledge Base Construction (AKBC) workshop addresses a key missing piece of the generative era: struct" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://www.akbc.ws/2026/" .
+
+nk:talk-workshop-10th-workshop-on-online-abuse-and-harms a nk:Talk ;
+    rdfs:label "10th Workshop on Online Abuse and Harms (WOAH)" ;
+    nk:about nk:topic-alignment-safety,
+        nk:topic-legal-finance,
+        nk:topic-low-resource-languages,
+        nk:topic-multilingual-nlp,
+        nk:topic-speech-audio ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "G12" ;
+    nk:summary "Artificial Intelligence (AI) and digital technologies have transformed how people communicate and interact, creating rich societal benefits. At the same time, they have amplified abusive and harmful content, reinforced inequalities, and increased risks to human rights and well-being." ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://www.thewoah.org/" .
+
+nk:talk-workshop-11th-workshop-on-financial-technology-a a nk:Talk ;
+    rdfs:label "11th Workshop on Financial Technology and Natural Language Processing (FinNLP - ACL SIG-FinTech)" ;
+    nk:about nk:topic-legal-finance,
+        nk:topic-llms ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "F7" ;
+    nk:summary "The FinNLP workshop aims to explore the intersection of Natural Language Processing (NLP), Machine Learning (ML), and Large Language Models (LLMs) within the financial, economics, and legal domains. The goal is to foster interdisciplinary research and innovation, addressing the multifaceted challeng" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://sigfintech.github.io/finnlp2026/index.html" .
+
+nk:talk-workshop-11th-workshop-on-natural-user-generated a nk:Talk ;
+    rdfs:label "11th Workshop on Natural User-generated Text (W-NUT)" ;
+    nk:about nk:topic-evaluation,
+        nk:topic-llms,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "G15-16" ;
+    nk:summary "The 11th Workshop on Natural User-generated Text (W-NUT) addresses the evolving challenges at the intersection of noisy, user-generated written content and modern Large Language Models (LLMs). As LLMs are increasingly deployed in real-world applications, they must contend with the messy, informal, a" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://noisy-text.github.io/2026" .
+
+nk:talk-workshop-13th-web-as-corpus-workshop-wac-13 a nk:Talk ;
+    rdfs:label "13th Web-as-Corpus Workshop (WaC-13)" ;
+    nk:about nk:topic-documents-web-data,
+        nk:topic-evaluation,
+        nk:topic-legal-finance,
+        nk:topic-low-resource-languages,
+        nk:topic-multilingual-nlp ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "G6" ;
+    nk:summary "The 13th Web-as-Corpus workshop provides a multidisciplinary forum for researchers to address the full life-cycle of web-based data. We invite contributions that introduce or evaluate methodologies for the collection, cleaning, and enrichment of web corpora, as well as their downstream applications " ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://wackyworkshop.org/" .
+
+nk:talk-workshop-2nd-workshop-on-sign-language-processin a nk:Talk ;
+    rdfs:label "2nd Workshop on Sign Language Processing (WSLP 2026)" ;
+    nk:about nk:topic-evaluation,
+        nk:topic-multilingual-nlp,
+        nk:topic-multimodal,
+        nk:topic-speech-audio ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "G11" ;
+    nk:summary "Across the world, more than 430 million people experience disabling hearing loss. For many in the Deaf and Hard of Hearing community, sign languages (SL) are the primary means of communication." ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://exploration-lab.github.io/WSLP-2026/" .
+
+nk:talk-workshop-3rd-workshop-on-natural-language-proces a nk:Talk ;
+    rdfs:label "3rd Workshop on Natural Language Processing meets Climate Change (ClimateNLP)" ;
+    nk:about nk:topic-social-good-climate ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "G13-14" ;
+    nk:summary "In the past decades, the importance of addressing climate change has been fully adopted by the scientific community. However, complicated dynamics between policy, regulation, industry, and society make it difficult to encourage effective climate action." ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://nlp4climate.github.io/" .
+
+nk:talk-workshop-4th-workshop-on-mathematical-natural-la a nk:Talk ;
+    rdfs:label "4th Workshop on Mathematical Natural Language Processing (MathNLP)" ;
+    nk:about nk:topic-evaluation,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "F4-5" ;
+    nk:summary "The articulation of mathematical arguments is a fundamental part of scientific reasoning and communication. Across many disciplines, expressing relations and interdependencies between quantities is at the centre of scientific argumentation." ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://sites.google.com/view/mathnlp2026" .
+
+nk:talk-workshop-5th-workshop-on-nlp-for-positive-impact a nk:Talk ;
+    rdfs:label "5th Workshop on NLP for Positive Impact (NLP4PI)" ;
+    nk:about nk:topic-alignment-safety,
+        nk:topic-social-good-climate,
+        nk:topic-speech-audio ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "G7-8" ;
+    nk:summary "The increasing integration of Natural Language Processing (NLP) technologies and systems into daily life opens up various opportunities to drive positive social impact. While much of existing research has focused on detecting and mitigating harm—such as hate speech detection and mitigating misinform" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://sites.google.com/view/nlp4positiveimpact" .
+
+nk:talk-workshop-6th-workshop-on-multilingual-representa a nk:Talk ;
+    rdfs:label "6th Workshop on Multilingual Representation Learning (associated with SIGTYP) (MRL)" ;
+    nk:about nk:topic-evaluation,
+        nk:topic-multilingual-nlp ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "F3" ;
+    nk:summary "Despite the importance of research on multilingual NLP topics, there are limited venues for this work. In 2025, across NAACL, ACL, EMNLP, and AACL, the MRL workshop was the only workshop focusing on multilingual NLP broadly, without a focus on a particular region or set of languages." ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://sigtyp.github.io/ws2026-mrl.html" .
+
+nk:talk-workshop-accelerating-language-modeling-research a nk:Talk ;
+    rdfs:label "Accelerating language modeling research with cognitively plausible datasets (BabyLM)" ;
+    nk:about nk:topic-cognition-brain,
+        nk:topic-evaluation,
+        nk:topic-llms,
+        nk:topic-multilingual-nlp ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "F4-5" ;
+    nk:summary "The BabyLM Workshop challenges the bigger-is-better trend in language model (LM) pretraining by providing a venue for the community to focus on small-scale LM training and exploring its connections to human language development. The workshop will invite research related to data-efficient LMs, develo" ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://babylm.github.io/index.html" .
+
+nk:talk-workshop-analyzing-and-interpreting-neural-netwo a nk:Talk ;
+    rdfs:label "Analyzing and Interpreting Neural Networks for NLP (BlackboxNLP)" ;
+    nk:about nk:topic-llms,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "P3" ;
+    nk:summary "As neural networks, and particularly large language models, have become ubiquitous in NLP research and applications, understanding their behaviors and how they connect to their internal mechanisms has evolved from an academic curiosity to a practical necessity. These models now power critical applic" ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://blackboxnlp.github.io/" .
+
+nk:talk-workshop-eleventh-conference-on-machine-translat a nk:Talk ;
+    rdfs:label "Eleventh Conference on Machine Translation (WMT)" ;
+    nk:about nk:topic-machine-translation ;
+    nk:inSession nk:session-workshops-28,
+        nk:session-workshops-29 ;
+    nk:room "G1-3" ;
+    nk:summary "Building on the success of 10 years of Workshops on Statistical Machine Translation (WMT), plus a further 10 years as the “Conference on Machine Translation”, we propose another two-day conference on the topic." ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th and Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://www2.statmt.org/wmt26/" .
+
+nk:talk-workshop-grounding-language-models-learning-fait a nk:Talk ;
+    rdfs:label "Grounding Language Models: Learning Faithfully and Efficiently (GLM)" ;
+    nk:about nk:topic-alignment-safety,
+        nk:topic-cognition-brain,
+        nk:topic-evaluation,
+        nk:topic-llms,
+        nk:topic-multimodal ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "P2" ;
+    nk:summary "This workshop focuses on grounding language models by connecting them to signals beyond text—such as external knowledge, interaction and feedback, perception, and action—to improve both faithfulness (reducing hallucinations, improving verifiability) and learning efficiency. It brings together resear" ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://groundlm.github.io/grouplm_emnlp2026/" .
+
+nk:talk-workshop-identifying-measuring-preventing-and-as a nk:Talk ;
+    rdfs:label "Identifying, Measuring, Preventing, and Assessing Consequences of Bias in Speech LLMs (IMPACT-SPEECH)" ;
+    nk:about nk:topic-alignment-safety,
+        nk:topic-llms,
+        nk:topic-speech-audio ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "G9-10" ;
+    nk:summary "The goal of this workshop is to bring together researchers and practitioners from diverse disciplines—from speech processing, natural language processing, machine learning, social sciences, and ethics—to advance the understanding of bias in speech-based large language models (LLMs). By fostering int" ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "http://impactspeech.github.io/" .
+
+nk:talk-workshop-improving-language-models-through-learn a nk:Talk ;
+    rdfs:label "Improving Language Models through Learning from Dialogue Game Interaction (LM Playschool)" ;
+    nk:about nk:topic-cognition-brain,
+        nk:topic-evaluation,
+        nk:topic-llms ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "F6" ;
+    nk:summary "The LM Playschool Workshop aims to bring together researchers interested in language learning from social interaction in conversational, collaborative, task-oriented, multi-turn environments. Relevant research strands include: (1) language games as a means of evaluating large language models and the" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://lm-playschool.github.io" .
+
+nk:talk-workshop-language-understanding-in-the-human-mac a nk:Talk ;
+    rdfs:label "Language Understanding in the Human-Machine Era (LUHME)" ;
+    nk:about nk:topic-cognition-brain,
+        nk:topic-llms ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "G11" ;
+    nk:summary "Large language models (LLMs) have revolutionized the way interactional artificial intelligence (AI) systems are developed by making them accessible to the general public. However, such systems are still prone to brittleness in language understanding, which raises doubts about the extent to which the" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://luhme.up.pt/" .
+
+nk:talk-workshop-natural-legal-language-processing-nllp- a nk:Talk ;
+    rdfs:label "Natural Legal Language Processing (NLLP) Workshop 2026 (8th edition)" ;
+    nk:about nk:topic-legal-finance,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "G9-10" ;
+    nk:summary "The NLLP workshop series explores methods and applications of Natural Language Processing (NLP) for the Legal Domain by focusing on original research on legal data and data with legal relevance. On the one hand, legal text (e.g., case law, legal rules, contracts) has distinct characteristics such as" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://nllpw.org/workshop/" .
+
+nk:talk-workshop-pluralistic-ai-nlp-diversity-aware-soci a nk:Talk ;
+    rdfs:label "Pluralistic AI & NLP: Diversity-aware, Sociotechnical and Responsible Alignment (PANDORA)" ;
+    nk:about nk:topic-alignment-safety ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "G13-14" ;
+    nk:summary "The PANDORA workshop explores methods, applications, and normative discussions around diversity-aware, sociotechnical, and responsible alignment of NLP technologies. We position pluralism as a core sociotechnical design principle and aim to unite researchers from NLP, AI safety, and related fields." ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://pandora-workshop.github.io/" .
+
+nk:talk-workshop-second-workshop-for-research-on-agent-l a nk:Talk ;
+    rdfs:label "Second Workshop for REsearch on Agent Language Models (REALM)" ;
+    nk:about nk:topic-agents,
+        nk:topic-alignment-safety,
+        nk:topic-evaluation,
+        nk:topic-llms ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "P1" ;
+    nk:summary "Agents with a high degree of autonomy and self-direction are rapidly transitioning from research prototypes to real-world deployments, transforming both industry and academia. Powered by large language models (LLMs) and enhanced with external tools, knowledge sources, planning strategies, and multi-" ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://realm-workshop.github.io/" .
+
+nk:talk-workshop-seventh-workshop-on-insights-from-negat a nk:Talk ;
+    rdfs:label "Seventh Workshop on Insights from Negative Results in NLP (Insights)" ;
+    nk:about nk:topic-evaluation,
+        nk:topic-machine-translation ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "F7" ;
+    nk:summary "Publication of negative results is difficult in most fields, but in NLP the problem is exacerbated by the near-universal focus on improvements in benchmarks. This situation implicitly discourages hypothesis-driven research, and it turns creation and fine-tuning of NLP models into art rather than sci" ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://insights-workshop.github.io/2026/" .
+
+nk:talk-workshop-speech-and-audio-language-models-worksh a nk:Talk ;
+    rdfs:label "Speech and Audio Language Models Workshop (2nd Edition) (SALMA)" ;
+    nk:about nk:topic-alignment-safety,
+        nk:topic-llms,
+        nk:topic-multilingual-nlp,
+        nk:topic-reasoning-math,
+        nk:topic-speech-audio ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "F9-10" ;
+    nk:summary "SALMA (Speech and Audio Language Models) workshop investigates speech and audio as first-class modalities for large language models (LLMs), addressing challenges that are underexplored in mainstream LLM research. Unlike text, audio presents continuous temporal structure, multi-scale semantics, paral" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://salma-workshop.github.io/salma-2026/" .
+
+nk:talk-workshop-tenth-widening-nlp-workshop-winlp a nk:Talk ;
+    rdfs:label "Tenth Widening NLP Workshop (WiNLP)" ;
+    nk:about nk:topic-legal-finance ;
+    nk:inSession nk:session-workshops-28 ;
+    nk:room "G6" ;
+    nk:summary "Widening NLP is a long-running diversity and inclusion workshop series within the ACL community. WiNLP exists because many barriers to participation are upstream of paper quality: unequal access to mentorship and professional networks, reduced opportunities for visibility and senior feedback, financ" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th 9:00–17:30" ;
+    nk:url "https://winlp-workshop.github.io/events/winlp-2026/call-for-papers/" .
+
+nk:talk-workshop-third-workshop-on-uncertainty-aware-nlp a nk:Talk ;
+    rdfs:label "Third Workshop on Uncertainty-Aware NLP (UncertaiNLP)" ;
+    nk:about nk:topic-cognition-brain,
+        nk:topic-evaluation,
+        nk:topic-multimodal,
+        nk:topic-reasoning-math,
+        nk:topic-uncertainty ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "F6" ;
+    nk:summary "Human language is inherently ambiguous and variable, yet much of NLP research assumes that uncertainty can and should be resolved. This workshop provides a forum for research that models and evaluates uncertainty arising from language, data, and modeling choices." ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://uncertainlp.github.io/" .
+
+nk:talk-workshop-workshop-on-document-intelligence-and-u a nk:Talk ;
+    rdfs:label "Workshop on Document Intelligence and Understanding (DocInsights)" ;
+    nk:about nk:topic-evaluation,
+        nk:topic-legal-finance,
+        nk:topic-llms,
+        nk:topic-multimodal,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "F3" ;
+    nk:summary "DocInsights focuses on advancing document understanding beyond plain text by centering structured, semi-structured, and multimodal documents in NLP research. Real-world documents in domains such as law, finance, healthcare, science, and government interleave free-form language with tables, forms, ch" ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://docinsights-workshop.github.io/docinsights-2026/" .
+
+nk:talk-workshop-workshop-on-open-reasoning-across-cultu a nk:Talk ;
+    rdfs:label "Workshop on Open Reasoning Across Cultures & Languages (ORACLE)" ;
+    nk:about nk:topic-evaluation,
+        nk:topic-legal-finance,
+        nk:topic-multilingual-nlp,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "G7-8" ;
+    nk:summary "ORACLE is an inaugural full-day workshop aimed at advancing Open Reasoning Across Cultures & Languages, with a focus on making multilingual reasoning in GenAI more transparent, reusable, and reproducible. The workshop addresses the fact that reasoning capabilities remain uneven across languages due " ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://sites.google.com/view/workshoporacle/" .
+
+nk:inst-australian-national-university a nk:Institution ;
+    rdfs:label "Australian National University" .
+
+nk:inst-bar-ilan-university a nk:Institution ;
+    rdfs:label "Bar-Ilan University" .
+
+nk:inst-bocconi-university a nk:Institution ;
+    rdfs:label "Bocconi University" .
+
+nk:inst-carnegie-mellon-university a nk:Institution ;
+    rdfs:label "Carnegie Mellon University" .
+
+nk:inst-cohere a nk:Institution ;
+    rdfs:label "Cohere" .
+
+nk:inst-cornell-university a nk:Institution ;
+    rdfs:label "Cornell University" .
+
+nk:inst-edinburgh a nk:Institution ;
+    rdfs:label "Edinburgh" .
+
+nk:inst-enlighty-ai a nk:Institution ;
+    rdfs:label "Enlighty.ai" .
+
+nk:inst-fundacion-via-libre a nk:Institution ;
+    rdfs:label "Fundación Vía Libre" .
+
+nk:inst-google-deepmind a nk:Institution ;
+    rdfs:label "Google DeepMind" .
+
+nk:inst-hong-kong-university-of-science-technology a nk:Institution ;
+    rdfs:label "Hong Kong University of Science & Technology" .
+
+nk:inst-inesc-id a nk:Institution ;
+    rdfs:label "INESC-ID" .
+
+nk:inst-inesc-id-portugal a nk:Institution ;
+    rdfs:label "INESC-ID, Portugal" .
+
+nk:inst-information-commissioner-s-office a nk:Institution ;
+    rdfs:label "Information Commissioner's Office" .
+
+nk:inst-institute-for-infocomm-research a nk:Institution ;
+    rdfs:label "Institute for Infocomm Research" .
+
+nk:inst-institute-of-science-tokyo a nk:Institution ;
+    rdfs:label "Institute of Science Tokyo" .
+
+nk:inst-instituto-de-telecomunicacoes a nk:Institution ;
+    rdfs:label "Instituto de Telecomunicações" .
+
+nk:inst-instituto-superior-tecnico a nk:Institution ;
+    rdfs:label "Instituto Superior Técnico" .
+
+nk:inst-iscte a nk:Institution ;
+    rdfs:label "Iscte" .
+
+nk:inst-mcgill-university a nk:Institution ;
+    rdfs:label "McGill University" .
+
+nk:inst-meta a nk:Institution ;
+    rdfs:label "Meta" .
+
+nk:inst-mila a nk:Institution ;
+    rdfs:label "Mila" .
+
+nk:inst-new-york-university-abu-dhabi a nk:Institution ;
+    rdfs:label "New York University Abu Dhabi" .
+
+nk:inst-nict a nk:Institution ;
+    rdfs:label "NICT" .
+
+nk:inst-ohio-state-university a nk:Institution ;
+    rdfs:label "Ohio State University" .
+
+nk:inst-peking-university a nk:Institution ;
+    rdfs:label "Peking University" .
+
+nk:inst-queen-s-university a nk:Institution ;
+    rdfs:label "Queen's University" .
+
+nk:inst-rutgers-university a nk:Institution ;
+    rdfs:label "Rutgers University" .
+
+nk:inst-service-now a nk:Institution ;
+    rdfs:label "Service Now" .
+
+nk:inst-tel-aviv-university a nk:Institution ;
+    rdfs:label "Tel Aviv University" .
+
+nk:inst-tohoku-university a nk:Institution ;
+    rdfs:label "Tohoku University" .
+
+nk:inst-unc-chapel-hill a nk:Institution ;
+    rdfs:label "UNC Chapel Hill" .
+
+nk:inst-university-of-amsterdam a nk:Institution ;
+    rdfs:label "University of Amsterdam" .
+
+nk:inst-university-of-cambridge a nk:Institution ;
+    rdfs:label "University of Cambridge" .
+
+nk:inst-university-of-gothenburg a nk:Institution ;
+    rdfs:label "University of Gothenburg" .
+
+nk:inst-university-of-hamburg a nk:Institution ;
+    rdfs:label "University of Hamburg" .
+
+nk:inst-university-of-padova a nk:Institution ;
+    rdfs:label "University of Padova" .
+
+nk:inst-university-of-technology-nuremberg a nk:Institution ;
+    rdfs:label "University of Technology Nuremberg" .
+
+nk:inst-university-of-turku a nk:Institution ;
+    rdfs:label "University of Turku" .
+
+nk:inst-university-of-utah a nk:Institution ;
+    rdfs:label "University of Utah" .
+
+nk:inst-university-of-wisconsin-madison a nk:Institution ;
+    rdfs:label "University of Wisconsin-Madison" .
+
+nk:inst-university-of-wurzburg a nk:Institution ;
+    rdfs:label "University of Würzburg" .
+
+nk:person-dhanya-sridhar a nk:Person ;
+    rdfs:label "Dhanya Sridhar" ;
+    nk:colleagueOf nk:person-patrik-reizinger,
+        nk:person-shruti-joshi ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-causal-foundations-for-interpretability .
+
+nk:person-fernando-batista a nk:Person ;
+    rdfs:label "Fernando Batista" ;
+    nk:affiliatedWith nk:inst-inesc-id-portugal,
+        nk:inst-iscte ;
+    nk:affiliation "Iscte and INESC-ID, Portugal" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-virtual-infrastructure-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/fmmb_small2.jpeg" ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-giovanni-da-san-martino a nk:Person ;
+    rdfs:label "Giovanni Da San Martino" ;
+    nk:affiliatedWith nk:inst-university-of-padova ;
+    nk:affiliation "University of Padova" ;
+    nk:colleagueOf nk:person-jing-jiang,
+        nk:person-michael-white,
+        nk:person-xiaodan-zhu,
+        nk:person-xiaojun-wan ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-arr-may-2026-editors-in-chief ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/giovanni_da%20_san_martino.jpeg" ;
+    nk:profile "http://www.joedsm.altervista.org/" .
+
+nk:person-giuseppe-attanasio a nk:Person ;
+    rdfs:label "Giuseppe Attanasio" ;
+    nk:affiliatedWith nk:inst-instituto-de-telecomunicacoes ;
+    nk:affiliation "Instituto de Telecomunicações" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-ethics-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/giuseppe_attanasio.jpg" ;
+    nk:profile "https://gattanasio.cc" .
+
+nk:person-goran-glavas a nk:Person ;
+    rdfs:label "Goran Glavas" ;
+    nk:affiliatedWith nk:inst-university-of-wurzburg ;
+    nk:affiliation "University of Würzburg" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-tutorial-chairs ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-hung-yi-lee a nk:Person ;
+    rdfs:label "Hung-Yi Lee" ;
+    nk:affiliatedWith nk:inst-national-taiwan-university ;
+    nk:affiliation "National Taiwan University" ;
+    nk:colleagueOf nk:person-jessy-li,
+        nk:person-sunipa-dev ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-program-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/hung-yi.png" ;
+    nk:profile "https://speech.ee.ntu.edu.tw/~hylee/" .
+
+nk:person-jindrich-libovicky a nk:Person ;
+    rdfs:label "Jindrich Libovický" ;
+    nk:colleagueOf nk:person-julie-kallini,
+        nk:person-sachin-kumar,
+        nk:person-tomasz-limisiewicz,
+        nk:person-valentin-hofmann ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-tokenization-for-large-language-models .
+
+nk:person-jordan-meadows a nk:Person ;
+    rdfs:label "Jordan Meadows" ;
+    nk:colleagueOf nk:person-lan-zhang,
+        nk:person-marco-valentino ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-autoformalization-mathematical-reasonin .
+
+nk:person-joydeep-biswas a nk:Person ;
+    rdfs:label "Joydeep Biswas" ;
+    nk:affiliatedWith nk:inst-university-of-texas-at-austin ;
+    nk:affiliation "University of Texas at Austin" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-ai-reviewing-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/joydeepb.jpg" ;
+    nk:profile "https://www.joydeepb.com/" .
+
+nk:person-jun-suzuki a nk:Person ;
+    rdfs:label "Jun Suzuki" ;
+    nk:affiliatedWith nk:inst-tohoku-university ;
+    nk:affiliation "Tohoku University" ;
+    nk:colleagueOf nk:person-steffen-eger ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-workshop-chairs ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-lillian-lee a nk:Person ;
+    rdfs:label "Lillian Lee" ;
+    nk:affiliatedWith nk:inst-cornell-university ;
+    nk:affiliation "Cornell University" ;
+    nk:colleagueOf nk:person-mor-geva,
+        nk:person-raymond-j-mooney ;
+    nk:confidence 0.8 ;
+    nk:panelistIn nk:talk-panel-new-missions-in-nlp-research .
+
+nk:person-luciana-benotti a nk:Person ;
+    rdfs:label "Luciana Benotti" ;
+    nk:affiliatedWith nk:inst-fundacion-via-libre ;
+    nk:affiliation "Fundación Vía Libre" ;
+    nk:colleagueOf nk:person-nancy-chen ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-best-paper-award-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/luciana_benotti.jpeg" ;
+    nk:profile "https://benotti.github.io/" .
+
+nk:person-manling-li a nk:Person ;
+    rdfs:label "Manling Li" ;
+    nk:colleagueOf nk:person-sha-li,
+        nk:person-zihan-wang ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-failure-modes-in-agentic-ai-from-reprod .
+
+nk:person-mike-zhang a nk:Person ;
+    rdfs:label "Mike Zhang" ;
+    nk:affiliatedWith nk:inst-university-of-copenhagen ;
+    nk:affiliation "University of Copenhagen" ;
+    nk:colleagueOf nk:person-yating-wu ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-workflow-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/mike_zhang.jpg" ;
+    nk:profile "https://jjzha.github.io/" .
+
+nk:person-minghan-wang a nk:Person ;
+    rdfs:label "Minghan Wang" ;
+    nk:affiliatedWith nk:inst-monash-university ;
+    nk:affiliation "Monash University" ;
+    nk:colleagueOf nk:person-pepa-atanasova ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-industry-track-chairs ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-mohit-bansal a nk:Person ;
+    rdfs:label "Mohit Bansal" ;
+    nk:affiliatedWith nk:inst-unc-chapel-hill ;
+    nk:affiliation "UNC Chapel Hill" ;
+    nk:colleagueOf nk:person-shahram-khadivi,
+        nk:person-verena-rieser,
+        nk:person-yashar-mehdad ;
+    nk:confidence 0.9 ;
+    nk:panelistIn nk:talk-panel-ai-agents-in-the-real-world-capability-tru ;
+    nk:photo "https://2026.emnlp.org/assets/images/keynotes/mohitbansal2025.png" ;
+    nk:presents nk:talk-industry-keynote-1-mohit-bansal ;
+    nk:profile "https://www.cs.unc.edu/~mbansal/" .
+
+nk:person-nafise-sadat-moosavi a nk:Person ;
+    rdfs:label "Nafise Sadat Moosavi" ;
+    nk:affiliatedWith nk:inst-university-of-sheffield ;
+    nk:affiliation "University of Sheffield" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-student-volunteer-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/Nafise_Moosavi.jpg" ;
+    nk:profile "https://ns-moosavi.github.io/" .
+
+nk:person-nikos-aletras a nk:Person ;
+    rdfs:label "Nikos Aletras" ;
+    nk:affiliatedWith nk:inst-university-of-sheffield ;
+    nk:affiliation "University of Sheffield" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-sponsorship-chairs ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-noemi-ligeti-nagy a nk:Person ;
+    rdfs:label "Noémi Ligeti-Nagy" ;
+    nk:affiliatedWith nk:inst-elte-research-centre-for-linguistics ;
+    nk:affiliation "ELTE Research Centre for Linguistics" ;
+    nk:colleagueOf nk:person-veronika-lipp ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-visa-local-organizing-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/ligetinagynoemi.jpg" ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-raj-dabre a nk:Person ;
+    rdfs:label "Raj Dabre" ;
+    nk:affiliatedWith nk:inst-google ;
+    nk:affiliation "Google" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-website-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/raj-dabre.jpg" ;
+    nk:profile "https://prajdabre.github.io/" .
+
+nk:person-shaoxiong-ji a nk:Person ;
+    rdfs:label "Shaoxiong Ji" ;
+    nk:affiliatedWith nk:inst-university-of-turku ;
+    nk:affiliation "University of Turku" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-publication-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/sji.jpg" ;
+    nk:profile "https://shaoxiongji.github.io" .
+
+nk:person-sweta-agrawal a nk:Person ;
+    rdfs:label "Sweta Agrawal" ;
+    nk:affiliatedWith nk:inst-google ;
+    nk:affiliation "Google" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-demonstration-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/sweta_agrawal.jpg" ;
+    nk:profile "https://sweta20.github.io/" .
+
+nk:person-vera-demberg a nk:Person ;
+    rdfs:label "Vera Demberg" ;
+    nk:confidence 0.4 ;
+    nk:presents nk:talk-workshop-multimodal-interaction-in-face-to-face- .
+
+nk:person-vlad-niculae a nk:Person ;
+    rdfs:label "Vlad Niculae" ;
+    nk:affiliatedWith nk:inst-university-of-amsterdam ;
+    nk:affiliation "University of Amsterdam" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-handbook-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/vn.jpg" ;
+    nk:profile "https://vene.ro" .
+
+nk:person-yang-cui a nk:Person ;
+    rdfs:label "Yang Cui" ;
+    nk:colleagueOf nk:person-yifan-wang,
+        nk:person-yunhao-zhang ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-language-models-as-windows-into-human-l .
+
+nk:person-yuki-arase a nk:Person ;
+    rdfs:label "Yuki Arase" ;
+    nk:affiliatedWith nk:inst-institute-of-science-tokyo ;
+    nk:affiliation "Institute of Science Tokyo" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-publicity-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/yuki_arase.jpg" ;
+    nk:profile "https://yukiar.github.io/" .
+
+nk:role-general-chair a nk:Role ;
+    rdfs:label "General Chair" .
+
+nk:role-senior-program-chair a nk:Role ;
+    rdfs:label "Senior Program Chair" .
+
+nk:session-25-1430-session-3-panel-new-miss a nk:Session ;
+    rdfs:label "Session 3 Panel: New Missions in NLP" .
+
+nk:session-25-1600-session-4-orals-posters- a nk:Session ;
+    rdfs:label "Session 4 — Orals/Posters B (Main, CL, TACL, Demos)" .
+
+nk:session-25-930-session-1-keynote-1-pasc a nk:Session ;
+    rdfs:label "Session 1 — Keynote 1: Pascale Fung" .
+
+nk:session-26-1515-session-8-keynote-2-grah a nk:Session ;
+    rdfs:label "Session 8 — Keynote 2: Graham Neubig" .
+
+nk:session-26-900-session-5-orals-posters- a nk:Session ;
+    rdfs:label "Session 5 — Orals/Posters C (Main, CL, TACL, SRW, Demos)" .
+
+nk:session-27-1400-session-12-keynote-3-ann a nk:Session ;
+    rdfs:label "Session 12 — Keynote 3: Anna Korhonen" .
+
+nk:talk-industry-keynote-1-mohit-bansal a nk:Talk ;
+    rdfs:label "Agentic Challenges (Trustworthy Collaboration, World Discovery, and Long-Horizon Memory) and Industry-Academia Collaborations" ;
+    nk:about nk:topic-agents,
+        nk:topic-alignment-safety,
+        nk:topic-reasoning-math,
+        nk:topic-speech-audio ;
+    nk:inSession nk:session-25-1600-session-4-orals-posters- ;
+    nk:summary "In this talk, I will discuss 3 major pitfalls and challenges of current state-of-the-art AI agents, and present potential solutions for: (1) Teaching agents to be trustworthy and reliable collaborators based on: social/pragmatic multi-agent interactions via speaker-listener confidence calibration, l" ;
+    nk:talkType "Industry keynote" ;
+    nk:time "2026-10-25 16:30–17:30" ;
+    nk:url "https://2026.emnlp.org/program/keynotes/" .
+
+nk:talk-industry-keynote-2-verena-rieser a nk:Talk ;
+    rdfs:label "Toward a Science of Constitutional Alignment: Positive Alignment for Value-Based Agents" ;
+    nk:about nk:topic-agents,
+        nk:topic-alignment-safety,
+        nk:topic-evaluation,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-26-900-session-5-orals-posters- ;
+    nk:summary "As AI systems become increasingly autonomous, we need a rigorous new science to ensure that more capable models make safe, reliable choices even when we aren’t looking. A promising direction is positive alignment: anchoring models to an intrinsic “north star” of high-level normative values rather th" ;
+    nk:talkType "Industry keynote" ;
+    nk:time "2026-10-26 9:00–10:30" ;
+    nk:url "https://2026.emnlp.org/program/keynotes/" .
+
+nk:talk-keynote-1-pascale-fung a nk:Talk ;
+    rdfs:label "Towards AI that understands the Real World." ;
+    nk:about nk:topic-agents,
+        nk:topic-multimodal,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-25-930-session-1-keynote-1-pasc ;
+    nk:summary "Recent advances in AI have been driven by large-scale generative models with impressive capabilities in language, code, and digital tasks. Yet these systems still have a limited understanding of the physical world, human intentions, and real-world context." ;
+    nk:talkType "Keynote" ;
+    nk:time "2026-10-25 09:30–10:30" ;
+    nk:url "https://2026.emnlp.org/program/keynotes/" .
+
+nk:talk-keynote-2-graham-neubig a nk:Talk ;
+    rdfs:label "On the Value of Open Research in Language Modeling - An Adversarial Dialog" ;
+    nk:about nk:topic-llms,
+        nk:topic-open-research ;
+    nk:inSession nk:session-26-1515-session-8-keynote-2-grah ;
+    nk:summary "Large language models are simultaneously one of the greatest advances in natural language processing ever and one of the most confounding for the open research community. Given the extreme resource intensiveness and economic value of research in this area, much research has moved out of the public e" ;
+    nk:talkType "Keynote" ;
+    nk:time "2026-10-26 15:15–16:15" ;
+    nk:url "https://2026.emnlp.org/program/keynotes/" .
+
+nk:talk-keynote-3-anna-korhonen a nk:Talk ;
+    rdfs:label "AI for the Many: Starting from the World, Not the Model" ;
+    nk:about nk:topic-multilingual-nlp ;
+    nk:inSession nk:session-27-1400-session-12-keynote-3-ann ;
+    nk:summary "AI is advancing at extraordinary speed, but its benefits remain profoundly uneven. For much of the world, the dominant path towards ever larger, more resource-intensive models is out of reach and not necessarily the right one." ;
+    nk:talkType "Keynote" ;
+    nk:time "2026-10-27 14:00–15:00" ;
+    nk:url "https://2026.emnlp.org/program/keynotes/" .
+
+nk:talk-workshop-fourth-arabic-natural-language-processi a nk:Talk ;
+    rdfs:label "Fourth Arabic Natural Language Processing Conference (ArabicNLP)" ;
+    nk:about nk:topic-llms ;
+    nk:inSession nk:session-workshops-28,
+        nk:session-workshops-29 ;
+    nk:room "G4-5" ;
+    nk:summary "The Fourth Arabic Natural Language Processing Conference (ArabicNLP 2026) is organized by the ACL Special Interest Group on Arabic NLP (SIGARAB). ArabicNLP 2026 follows the First ArabicNLP conference (in 2023 with EMNLP), Second ArabicNLP conference (in 2024 with ACL), Third ArabicNLP conference (in" ;
+    nk:talkType "Workshop" ;
+    nk:time "Wednesday, October 28th and Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://arabicnlp2026.sigarab.org" .
+
+nk:topic-documents-web-data a nk:Topic ;
+    rdfs:label "Documents & web data" .
+
+nk:topic-interpretability a nk:Topic ;
+    rdfs:label "Interpretability" .
+
+nk:topic-knowledge-bases a nk:Topic ;
+    rdfs:label "Knowledge bases" .
+
+nk:topic-open-research a nk:Topic ;
+    rdfs:label "Open research" .
+
+nk:topic-tokenization a nk:Topic ;
+    rdfs:label "Tokenization" .
+
+nk:topic-uncertainty a nk:Topic ;
+    rdfs:label "Uncertainty" .
+
+nk:inst-elte-research-centre-for-linguistics a nk:Institution ;
+    rdfs:label "ELTE Research Centre for Linguistics" .
+
+nk:inst-instituto-superior-tecnico-university-of-lisbon a nk:Institution ;
+    rdfs:label "Instituto Superior Técnico, University of Lisbon" .
+
+nk:inst-monash-university a nk:Institution ;
+    rdfs:label "Monash University" .
+
+nk:inst-national-taiwan-university a nk:Institution ;
+    rdfs:label "National Taiwan University" .
+
+nk:person-david-ifeoluwa-adelani a nk:Person ;
+    rdfs:label "David Ifeoluwa Adelani" ;
+    nk:affiliatedWith nk:inst-mcgill-university ;
+    nk:affiliation "McGill University" ;
+    nk:colleagueOf nk:person-sara-hooker,
+        nk:person-spandana-gella,
+        nk:person-vinodkumar-prabhakaran,
+        nk:person-wei-xu ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-diversity-and-inclusion-chairs ;
+    nk:organizes nk:talk-tutorial-multilingual-multicultural-llms ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/david_adelani.png" ;
+    nk:profile "https://dadelani.github.io/" .
+
+nk:person-jessy-li a nk:Person ;
+    rdfs:label "Jessy Li" ;
+    nk:affiliatedWith nk:inst-university-of-texas-at-austin ;
+    nk:affiliation "University of Texas at Austin" ;
+    nk:colleagueOf nk:person-sunipa-dev ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-program-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/jessy_li.jpg" ;
+    nk:profile "https://jessyli.com" .
+
+nk:person-jing-jiang a nk:Person ;
+    rdfs:label "Jing Jiang" ;
+    nk:affiliatedWith nk:inst-australian-national-university ;
+    nk:affiliation "Australian National University" ;
+    nk:colleagueOf nk:person-michael-white,
+        nk:person-xiaodan-zhu,
+        nk:person-xiaojun-wan ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-arr-may-2026-editors-in-chief ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/jing_jiang.jpg" ;
+    nk:profile "https://comp.anu.edu.au/people/jing-jiang/" .
+
+nk:person-julie-kallini a nk:Person ;
+    rdfs:label "Julie Kallini" ;
+    nk:colleagueOf nk:person-sachin-kumar,
+        nk:person-tomasz-limisiewicz,
+        nk:person-valentin-hofmann ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-tokenization-for-large-language-models .
+
+nk:person-lan-zhang a nk:Person ;
+    rdfs:label "Lan Zhang" ;
+    nk:colleagueOf nk:person-marco-valentino ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-autoformalization-mathematical-reasonin .
+
+nk:person-mor-geva a nk:Person ;
+    rdfs:label "Mor Geva" ;
+    nk:affiliatedWith nk:inst-tel-aviv-university ;
+    nk:affiliation "Tel Aviv University" ;
+    nk:colleagueOf nk:person-raymond-j-mooney ;
+    nk:confidence 0.9 ;
+    nk:panelistIn nk:talk-panel-new-missions-in-nlp-research ;
+    nk:photo "https://2026.emnlp.org/assets/images/panelists/mor_geva.jpg" .
+
+nk:person-nancy-chen a nk:Person ;
+    rdfs:label "Nancy Chen" ;
+    nk:affiliatedWith nk:inst-institute-for-infocomm-research ;
+    nk:affiliation "Institute for Infocomm Research" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-best-paper-award-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/nancy_chen.jpg" ;
+    nk:profile "https://sites.google.com/corp/site/nancyfchen/home" .
+
+nk:person-patrik-reizinger a nk:Person ;
+    rdfs:label "Patrik Reizinger" ;
+    nk:colleagueOf nk:person-shruti-joshi ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-causal-foundations-for-interpretability .
+
+nk:person-pepa-atanasova a nk:Person ;
+    rdfs:label "Pepa Atanasova" ;
+    nk:affiliatedWith nk:inst-university-of-copenhagen ;
+    nk:affiliation "University of Copenhagen" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-industry-track-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/pepa.png" ;
+    nk:profile "https://apepa.github.io/" .
+
+nk:person-sara-hooker a nk:Person ;
+    rdfs:label "Sara Hooker" ;
+    nk:colleagueOf nk:person-vinodkumar-prabhakaran,
+        nk:person-wei-xu ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-multilingual-multicultural-llms .
+
+nk:person-sha-li a nk:Person ;
+    rdfs:label "Sha Li" ;
+    nk:colleagueOf nk:person-zihan-wang ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-failure-modes-in-agentic-ai-from-reprod .
+
+nk:person-shahram-khadivi a nk:Person ;
+    rdfs:label "Shahram Khadivi" ;
+    nk:colleagueOf nk:person-verena-rieser,
+        nk:person-yashar-mehdad ;
+    nk:confidence 0.4 ;
+    nk:panelistIn nk:talk-panel-ai-agents-in-the-real-world-capability-tru .
+
+nk:person-spandana-gella a nk:Person ;
+    rdfs:label "Spandana Gella" ;
+    nk:affiliatedWith nk:inst-service-now ;
+    nk:affiliation "Service Now" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-diversity-and-inclusion-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/spandana.jpeg" ;
+    nk:profile "https://spandanagella.github.io/" .
+
+nk:person-steffen-eger a nk:Person ;
+    rdfs:label "Steffen Eger" ;
+    nk:affiliatedWith nk:inst-university-of-technology-nuremberg ;
+    nk:affiliation "University of Technology Nuremberg" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-workshop-chairs ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-veronika-lipp a nk:Person ;
+    rdfs:label "Veronika Lipp" ;
+    nk:affiliatedWith nk:inst-elte-research-centre-for-linguistics ;
+    nk:affiliation "ELTE Research Centre for Linguistics" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-visa-local-organizing-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/LV_portr%C3%A9_wb.jpg" ;
+    nk:profile "https://2026.emnlp.org/organization/" .
+
+nk:person-yating-wu a nk:Person ;
+    rdfs:label "Yating Wu" ;
+    nk:affiliatedWith nk:inst-university-of-texas-at-austin ;
+    nk:affiliation "The University of Texas at Austin" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-workflow-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/yating.jpg" ;
+    nk:profile "https://yatingwu.info" .
+
+nk:person-yifan-wang a nk:Person ;
+    rdfs:label "Yifan Wang" ;
+    nk:colleagueOf nk:person-yunhao-zhang ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-language-models-as-windows-into-human-l .
+
+nk:role-ai-reviewing-chairs a nk:Role ;
+    rdfs:label "AI Reviewing Chairs" .
+
+nk:role-demonstration-chairs a nk:Role ;
+    rdfs:label "Demonstration Chairs" .
+
+nk:role-ethics-chairs a nk:Role ;
+    rdfs:label "Ethics Chairs" .
+
+nk:role-handbook-chairs a nk:Role ;
+    rdfs:label "Handbook Chairs" .
+
+nk:role-publication-chairs a nk:Role ;
+    rdfs:label "Publication Chairs" .
+
+nk:role-publicity-chairs a nk:Role ;
+    rdfs:label "Publicity Chairs" .
+
+nk:role-sponsorship-chairs a nk:Role ;
+    rdfs:label "Sponsorship Chairs" .
+
+nk:role-student-volunteer-chairs a nk:Role ;
+    rdfs:label "Student Volunteer Chairs" .
+
+nk:role-tutorial-chairs a nk:Role ;
+    rdfs:label "Tutorial Chairs" .
+
+nk:role-virtual-infrastructure-chairs a nk:Role ;
+    rdfs:label "Virtual Infrastructure Chairs" .
+
+nk:role-website-chairs a nk:Role ;
+    rdfs:label "Website Chairs" .
+
+nk:talk-workshop-multimodal-interaction-in-face-to-face- a nk:Talk ;
+    rdfs:label "Multimodal Interaction in Face-to-Face Dialogue (MINT)" ;
+    nk:about nk:topic-cognition-brain,
+        nk:topic-evaluation,
+        nk:topic-multimodal ;
+    nk:inSession nk:session-workshops-29 ;
+    nk:room "F8" ;
+    nk:summary "MINT: Multimodal Interaction in Face-to-Face Dialogue is a one-day workshop that targets a core limitation in current “multimodal NLP”: most approaches treat nonverbal signals (gesture, facial expression, gaze, body pose, prosody) as auxiliary context to language, or as post-hoc outputs generated af" ;
+    nk:talkType "Workshop" ;
+    nk:time "Thursday, October 29th 9:00–17:30" ;
+    nk:url "https://mintworkshop.github.io/2026/" .
+
+nk:topic-low-resource-languages a nk:Topic ;
+    rdfs:label "Low-resource languages" .
+
+nk:topic-machine-translation a nk:Topic ;
+    rdfs:label "Machine translation" .
+
+nk:topic-social-good-climate a nk:Topic ;
+    rdfs:label "Social good & climate" .
+
+nk:inst-google a nk:Institution ;
+    rdfs:label "Google" .
+
+nk:inst-university-of-copenhagen a nk:Institution ;
+    rdfs:label "University of Copenhagen" .
+
+nk:inst-university-of-sheffield a nk:Institution ;
+    rdfs:label "University of Sheffield" .
+
+nk:person-marco-valentino a nk:Person ;
+    rdfs:label "Marco Valentino" ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-autoformalization-mathematical-reasonin .
+
+nk:person-michael-white a nk:Person ;
+    rdfs:label "Michael White" ;
+    nk:affiliatedWith nk:inst-ohio-state-university ;
+    nk:affiliation "The Ohio State University" ;
+    nk:colleagueOf nk:person-xiaodan-zhu,
+        nk:person-xiaojun-wan ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-arr-may-2026-editors-in-chief ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/michael_white.jpg" ;
+    nk:profile "https://u.osu.edu/white.1240/" .
+
+nk:person-raymond-j-mooney a nk:Person ;
+    rdfs:label "Raymond J. Mooney" ;
+    nk:affiliatedWith nk:inst-university-of-texas-at-austin ;
+    nk:affiliation "University of Texas at Austin" ;
+    nk:confidence 0.9 ;
+    nk:panelistIn nk:talk-panel-new-missions-in-nlp-research ;
+    nk:photo "https://2026.emnlp.org/assets/images/panelists/raymond_mooney.jpg" .
+
+nk:person-sachin-kumar a nk:Person ;
+    rdfs:label "Sachin Kumar" ;
+    nk:colleagueOf nk:person-tomasz-limisiewicz,
+        nk:person-valentin-hofmann ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-tokenization-for-large-language-models .
+
+nk:person-shruti-joshi a nk:Person ;
+    rdfs:label "Shruti Joshi" ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-causal-foundations-for-interpretability .
+
+nk:person-sunipa-dev a nk:Person ;
+    rdfs:label "Sunipa Dev" ;
+    nk:affiliatedWith nk:inst-google ;
+    nk:affiliation "Google" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-program-chairs ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/sunipa_dev.jpg" ;
+    nk:profile "https://sunipa.github.io" .
+
+nk:person-verena-rieser a nk:Person ;
+    rdfs:label "Verena Rieser" ;
+    nk:affiliatedWith nk:inst-google-deepmind ;
+    nk:affiliation "Google DeepMind" ;
+    nk:colleagueOf nk:person-yashar-mehdad ;
+    nk:confidence 0.9 ;
+    nk:panelistIn nk:talk-panel-ai-agents-in-the-real-world-capability-tru ;
+    nk:photo "https://2026.emnlp.org/assets/images/keynotes/Verena_Rieser.jpg" ;
+    nk:presents nk:talk-industry-keynote-2-verena-rieser .
+
+nk:person-vinodkumar-prabhakaran a nk:Person ;
+    rdfs:label "Vinodkumar Prabhakaran" ;
+    nk:colleagueOf nk:person-wei-xu ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-multilingual-multicultural-llms .
+
+nk:person-yunhao-zhang a nk:Person ;
+    rdfs:label "Yunhao Zhang" ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-language-models-as-windows-into-human-l .
+
+nk:person-zihan-wang a nk:Person ;
+    rdfs:label "Zihan Wang" ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-failure-modes-in-agentic-ai-from-reprod .
+
+nk:role-best-paper-award-chairs a nk:Role ;
+    rdfs:label "Best Paper Award Chairs" .
+
+nk:role-diversity-and-inclusion-chairs a nk:Role ;
+    rdfs:label "Diversity and Inclusion Chairs" .
+
+nk:role-industry-track-chairs a nk:Role ;
+    rdfs:label "Industry Track Chairs" .
+
+nk:role-visa-local-organizing-chairs a nk:Role ;
+    rdfs:label "Visa/Local Organizing Chairs" .
+
+nk:role-workflow-chairs a nk:Role ;
+    rdfs:label "Workflow Chairs" .
+
+nk:role-workshop-chairs a nk:Role ;
+    rdfs:label "Workshop Chairs" .
+
+nk:session-tutorials-afternoon a nk:Session ;
+    rdfs:label "Tutorials · Afternoon 14:00–17:30" .
+
+nk:session-tutorials-morning a nk:Session ;
+    rdfs:label "Tutorials · Morning 9:00–12:30" .
+
+nk:inst-university-of-texas-at-austin a nk:Institution ;
+    rdfs:label "University of Texas at Austin" .
+
+nk:person-tomasz-limisiewicz a nk:Person ;
+    rdfs:label "Tomasz Limisiewicz" ;
+    nk:colleagueOf nk:person-valentin-hofmann ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-tokenization-for-large-language-models .
+
+nk:person-wei-xu a nk:Person ;
+    rdfs:label "Wei Xu" ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-multilingual-multicultural-llms .
+
+nk:person-xiaodan-zhu a nk:Person ;
+    rdfs:label "Xiaodan Zhu" ;
+    nk:affiliatedWith nk:inst-queen-s-university ;
+    nk:affiliation "Queen's University" ;
+    nk:colleagueOf nk:person-xiaojun-wan ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-arr-may-2026-editors-in-chief ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/xiaodan_zhu.jpg" ;
+    nk:profile "https://www.xiaodanzhu.com/" .
+
+nk:person-yashar-mehdad a nk:Person ;
+    rdfs:label "Yashar Mehdad" ;
+    nk:confidence 0.4 ;
+    nk:panelistIn nk:talk-panel-ai-agents-in-the-real-world-capability-tru .
+
+nk:role-program-chairs a nk:Role ;
+    rdfs:label "Program Chairs" .
+
+nk:talk-panel-new-missions-in-nlp-research a nk:Talk ;
+    rdfs:label "New Missions in NLP Research" ;
+    nk:about nk:topic-evaluation,
+        nk:topic-llms ;
+    nk:inSession nk:session-25-1430-session-3-panel-new-miss ;
+    nk:summary "Large language models have rapidly shifted from research prototypes to widely used infrastructure. This new reality is changing the center of gravity of NLP research, and progress can no longer be measured only by fractional improvements in benchmark scores." ;
+    nk:talkType "Panel" ;
+    nk:time "2026-10-25 14:00–15:30" ;
+    nk:url "https://2026.emnlp.org/program/panel/" .
+
+nk:talk-tutorial-autoformalization-mathematical-reasonin a nk:Talk ;
+    rdfs:label "Autoformalization & Mathematical Reasoning" ;
+    nk:about nk:topic-evaluation,
+        nk:topic-llms,
+        nk:topic-reasoning-math ;
+    nk:inSession nk:session-tutorials-afternoon ;
+    nk:room "TBA" ;
+    nk:summary "This tutorial consists of presentations, live demonstrations, and interactive discussions introducing autoformalization with large language models (LLMs). Participants will learn the fundamentals of formal mathematical reasoning, theorem provers (Lean4 and Isabelle), retrieval-augmented autoformaliz" ;
+    nk:talkType "Tutorial" ;
+    nk:time "2026-10-28 14:00–17:30" ;
+    nk:url "https://2026.emnlp.org/program/tutorials/" .
+
+nk:talk-tutorial-causal-foundations-for-interpretability a nk:Talk ;
+    rdfs:label "Causal Foundations for Interpretability: What Your Methods Actually Identify" ;
+    nk:about nk:topic-interpretability ;
+    nk:inSession nk:session-tutorials-afternoon ;
+    nk:room "TBA" ;
+    nk:summary "Lectures, case studies, and demonstration of concepts with interactive demos." ;
+    nk:talkType "Tutorial" ;
+    nk:time "2026-10-28 14:00–17:30" ;
+    nk:url "https://2026.emnlp.org/program/tutorials/" .
+
+nk:talk-tutorial-failure-modes-in-agentic-ai-from-reprod a nk:Talk ;
+    rdfs:label "Failure Modes in Agentic AI: From Reproducible Triggers and Diagnostics to Reliable Fixes" ;
+    nk:about nk:topic-agents ;
+    nk:inSession nk:session-tutorials-morning ;
+    nk:room "TBA" ;
+    nk:summary "This will be a 3.5 hour tutorial with slides presentation and real-time demonstrations." ;
+    nk:talkType "Tutorial" ;
+    nk:time "2026-10-28 9:00–12:30" ;
+    nk:url "https://2026.emnlp.org/program/tutorials/" .
+
+nk:talk-tutorial-language-models-as-windows-into-human-l a nk:Talk ;
+    rdfs:label "Language Models as Windows into Human Language Processing: Neural Encoding, Decoding, and Brain Alignment with NLP" ;
+    nk:about nk:topic-alignment-safety,
+        nk:topic-cognition-brain,
+        nk:topic-llms ;
+    nk:inSession nk:session-tutorials-morning ;
+    nk:room "TBA" ;
+    nk:summary "The tutors will deliver this mainly in the form of slides presentation, and will potentially include some short live demos of the presented systems." ;
+    nk:talkType "Tutorial" ;
+    nk:time "2026-10-28 9:00–12:30" ;
+    nk:url "https://2026.emnlp.org/program/tutorials/" .
+
+nk:person-valentin-hofmann a nk:Person ;
+    rdfs:label "Valentin Hofmann" ;
+    nk:confidence 0.4 ;
+    nk:organizes nk:talk-tutorial-tokenization-for-large-language-models .
+
+nk:person-xiaojun-wan a nk:Person ;
+    rdfs:label "Xiaojun Wan" ;
+    nk:affiliatedWith nk:inst-peking-university ;
+    nk:affiliation "Peking University" ;
+    nk:confidence 0.9 ;
+    nk:holds nk:role-arr-may-2026-editors-in-chief ;
+    nk:photo "https://2026.emnlp.org/assets/images/committee/xiaojun_wan.jpg" ;
+    nk:profile "https://wanxiaojun.github.io/" .
+
+nk:talk-panel-ai-agents-in-the-real-world-capability-tru a nk:Talk ;
+    rdfs:label "AI Agents in the Real World: Capability, Trust, Values, and Deployment" ;
+    nk:about nk:topic-agents,
+        nk:topic-evaluation,
+        nk:topic-llms,
+        nk:topic-multimodal ;
+    nk:summary "Large language models are rapidly evolving from systems that generate responses into agents that pursue goals, use tools, maintain memory, interact with people and other agents, and act across extended periods of time. Yet greater agency brings more than greater capability: it introduces new questio" ;
+    nk:talkType "Industry panel" ;
+    nk:url "https://2026.emnlp.org/program/industry/" .
+
+nk:talk-tutorial-multilingual-multicultural-llms a nk:Talk ;
+    rdfs:label "Multilingual Multicultural LLMs" ;
+    nk:about nk:topic-llms,
+        nk:topic-multilingual-nlp ;
+    nk:inSession nk:session-tutorials-afternoon ;
+    nk:room "TBA" ;
+    nk:summary "Lectures, Q&A." ;
+    nk:talkType "Tutorial" ;
+    nk:time "2026-10-28 14:00–17:30" ;
+    nk:url "https://2026.emnlp.org/program/tutorials/" .
+
+nk:role-arr-may-2026-editors-in-chief a nk:Role ;
+    rdfs:label "ARR May 2026 Editors-in-Chief" .
+
+nk:talk-tutorial-tokenization-for-large-language-models a nk:Talk ;
+    rdfs:label "Tokenization for Large Language Models" ;
+    nk:about nk:topic-llms,
+        nk:topic-tokenization ;
+    nk:inSession nk:session-tutorials-morning ;
+    nk:room "TBA" ;
+    nk:summary "Direct lecturing with hands-on exercises in Python Notebooks." ;
+    nk:talkType "Tutorial" ;
+    nk:time "2026-10-28 9:00–12:30" ;
+    nk:url "https://2026.emnlp.org/program/tutorials/" .
+
+nk:topic-agents a nk:Topic ;
+    rdfs:label "Agents" .
+
+nk:topic-speech-audio a nk:Topic ;
+    rdfs:label "Speech & audio" .
+
+nk:topic-cognition-brain a nk:Topic ;
+    rdfs:label "Cognition & brain" .
+
+nk:topic-legal-finance a nk:Topic ;
+    rdfs:label "Legal & finance" .
+
+nk:topic-multimodal a nk:Topic ;
+    rdfs:label "Multimodal" .
+
+nk:topic-multilingual-nlp a nk:Topic ;
+    rdfs:label "Multilingual NLP" .
+
+nk:topic-alignment-safety a nk:Topic ;
+    rdfs:label "Alignment & safety" .
+
+nk:topic-reasoning-math a nk:Topic ;
+    rdfs:label "Reasoning & math" .
+
+nk:session-workshops-28 a nk:Session ;
+    rdfs:label "Workshops · Wednesday, October 28" .
+
+nk:session-workshops-29 a nk:Session ;
+    rdfs:label "Workshops · Thursday, October 29" .
+
+nk:topic-evaluation a nk:Topic ;
+    rdfs:label "Evaluation" .
+
+nk:topic-llms a nk:Topic ;
+    rdfs:label "LLMs" .
+
