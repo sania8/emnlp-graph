@@ -65,14 +65,14 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
 
   return (
     <div className="apple-light">
-      <div className="mx-auto flex min-h-[70vh] w-full max-w-[90rem] flex-col justify-center px-6 py-16 text-center">
+      <div className="mx-auto flex min-h-[60vh] w-full max-w-[120rem] flex-col justify-center px-8 py-12 text-center">
         <p className="text-2xl font-medium text-muted">Conference graphs</p>
         <h1 className="mt-3 text-5xl font-bold tracking-tight sm:text-6xl">Pick a conference to explore</h1>
-        <p className="mx-auto mt-4 max-w-3xl text-4xl text-muted">
+        <p className="mx-auto mt-3 max-w-3xl text-3xl text-muted">
           See how talks, speakers and research topics connect.
         </p>
 
-        <div className="mt-12 grid gap-8 text-left lg:grid-cols-2">
+        <div className="mt-10 grid gap-8 text-left lg:grid-cols-2">
           {/* EMNLP */}
           {graph ? (
             <div className="cm-wrap">
@@ -82,37 +82,37 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
                   if (window.matchMedia("(hover: none)").matches) setPinned((p) => !p);
                   else openWith("programme", e.clientX, e.clientY);
                 }}
-                className="group relative flex h-full w-full min-h-[32rem] flex-col justify-between overflow-hidden rounded-3xl bg-surface p-10 text-left shadow-[0_2px_20px_-8px_rgba(0,0,0,0.18)] ring-1 ring-black/5 transition-all duration-500 hover:shadow-[0_24px_70px_-24px_rgba(0,122,255,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="group relative flex h-full w-full min-h-[24rem] flex-col justify-between overflow-hidden rounded-3xl bg-surface p-8 text-left shadow-[0_2px_20px_-8px_rgba(0,0,0,0.18)] ring-1 ring-black/5 transition-all duration-500 hover:shadow-[0_24px_70px_-24px_rgba(0,122,255,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <div aria-hidden="true" className="absolute inset-x-0 top-0 h-2 bg-accent" />
                 <div>
                   {live ? (
-                    <span className="inline-flex items-center gap-3 rounded-full bg-accent/15 px-6 py-2 text-3xl font-medium text-accent">
+                    <span className="inline-flex items-center gap-3 rounded-full bg-accent/15 px-5 py-1.5 text-2xl font-medium text-accent">
                       <span className="h-3 w-3 animate-pulse rounded-full bg-accent motion-reduce:animate-none" />
                       Live now
                     </span>
                   ) : (
-                    <span className="inline-block rounded-full px-6 py-2 text-3xl font-medium text-muted" style={{ background: FILL2 }}>
+                    <span className="inline-block rounded-full px-5 py-1.5 text-2xl font-medium text-muted" style={{ background: FILL2 }}>
                       Available
                     </span>
                   )}
-                  <h2 className="mt-6 text-6xl font-bold leading-[1.05] tracking-tight xl:text-7xl">
+                  <h2 className="mt-5 text-5xl font-bold leading-[1.05] tracking-tight xl:text-6xl">
                     {meta.conference}
                   </h2>
-                  <p className="mt-6 text-3xl text-accent">{meta.venue}</p>
-                  <p className="mt-2 text-3xl text-muted">{meta.dates}</p>
+                  <p className="mt-4 text-2xl text-accent">{meta.venue}</p>
+                  <p className="mt-1 text-2xl text-muted">{meta.dates}</p>
                 </div>
                 {SHOW_STATS && (
-                  <dl className="mt-10 grid grid-cols-3 gap-4">
+                  <dl className="mt-8 grid grid-cols-3 gap-4">
                     {stats.map(([l, v]) => (
                       <div key={l} className="rounded-2xl px-4 py-4 text-center" style={{ background: FILL2 }}>
-                        <dd className="text-5xl font-bold tabular-nums xl:text-6xl">{v}</dd>
-                        <dt className="mt-1 text-2xl text-muted">{l}</dt>
+                        <dd className="text-4xl font-bold tabular-nums xl:text-5xl">{v}</dd>
+                        <dt className="mt-1 text-xl text-muted">{l}</dt>
                       </div>
                     ))}
                   </dl>
                 )}
-                <span className="mt-8 flex min-h-[72px] items-center justify-center rounded-2xl bg-accent text-3xl font-semibold text-white transition-transform duration-300 group-hover:scale-[1.01]">
+                <span className="mt-6 flex min-h-[60px] items-center justify-center rounded-2xl bg-accent text-2xl font-semibold text-white transition-transform duration-300 group-hover:scale-[1.01]">
                   Explore the graph
                 </span>
               </button>
@@ -126,7 +126,7 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
               />
             </div>
           ) : (
-            <div className="rounded-3xl bg-surface p-10 text-3xl ring-1 ring-black/5">
+            <div className="rounded-3xl bg-surface p-8 text-2xl ring-1 ring-black/5">
               No dataset yet. Run <code>npm run kg</code>, then reload.
             </div>
           )}
@@ -135,39 +135,39 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
           <div
             aria-disabled
             style={{ ["--accent" as any]: "#AF52DE" } as React.CSSProperties}
-            className="flex min-h-[38rem] flex-col justify-between rounded-3xl border-2 border-dashed border-edge bg-transparent p-10"
+            className="flex min-h-[24rem] flex-col justify-between rounded-3xl border-2 border-dashed border-edge bg-transparent p-8"
           >
             <div>
               <span className="inline-block rounded-full bg-accent/12 px-5 py-1.5 text-2xl font-medium text-accent">
                 Upcoming
               </span>
-              <h2 className="mt-6 text-7xl font-bold leading-[1.05] tracking-tight xl:text-8xl">NeurIPS 2026</h2>
-              <p className="mt-6 text-4xl text-accent">Sydney, Australia</p>
-              <p className="mt-2 text-4xl text-muted">6–12 December 2026</p>
-              <p className="mt-4 text-2xl text-muted">Satellites: Atlanta · Paris, 9–13 December</p>
+              <h2 className="mt-5 text-5xl font-bold leading-[1.05] tracking-tight xl:text-6xl">NeurIPS 2026</h2>
+              <p className="mt-4 text-2xl text-accent">Sydney, Australia</p>
+              <p className="mt-1 text-2xl text-muted">6–12 December 2026</p>
+              <p className="mt-3 text-xl text-muted">Satellites: Atlanta · Paris, 9–13 December</p>
             </div>
-            <p className="mt-10 rounded-2xl px-6 px-6 py-6 text-center text-3xl font-medium text-muted" style={{ background: FILL2 }}>
+            <p className="mt-6 rounded-2xl px-6 py-5 text-center text-2xl font-medium text-muted" style={{ background: FILL2 }}>
               Graph coming soon
             </p>
           </div>
         </div>
       </div>
 
-      <footer className="mx-auto w-full max-w-[90rem] px-6 pb-14 pt-4">
-        <div className="flex flex-col items-center gap-6 border-t border-black/10 pt-10 text-center lg:flex-row lg:justify-center lg:gap-12">
-          <p className="text-2xl text-muted lg:whitespace-nowrap lg:text-[clamp(1.1rem,1.75vw,2.4rem)]">
+      <footer className="mx-auto w-full max-w-[120rem] px-8 pb-12 pt-2">
+        <div className="flex flex-col items-center gap-5 border-t border-black/10 pt-8 text-center lg:flex-row lg:justify-center lg:gap-10">
+          <p className="text-xl text-muted lg:whitespace-nowrap lg:text-[clamp(1rem,1.4vw,1.75rem)]">
             Built by <span className="font-semibold text-foreground">Sania Verma</span>, M.Sc. in AI, City St George’s, University of London
           </p>
-          <div className="flex shrink-0 items-center gap-5">
+          <div className="flex shrink-0 items-center gap-4">
             <a
               href="https://github.com/sania8"
               target="_blank"
               rel="noreferrer"
               aria-label="Sania Verma on GitHub"
-              className="grid h-16 w-16 place-items-center rounded-full text-foreground transition-transform duration-300 hover:-translate-y-1 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="grid h-14 w-14 place-items-center rounded-full text-foreground transition-transform duration-300 hover:-translate-y-1 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               style={{ background: FILL2 }}
             >
-              <svg width="46" height="46" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.3-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.876.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
               </svg>
             </a>
@@ -176,10 +176,10 @@ export default function ConferenceHub({ graph }: { graph: Graph | null }) {
               target="_blank"
               rel="noreferrer"
               aria-label="Sania Verma on LinkedIn"
-              className="grid h-16 w-16 place-items-center rounded-full text-foreground transition-transform duration-300 hover:-translate-y-1 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="grid h-14 w-14 place-items-center rounded-full text-foreground transition-transform duration-300 hover:-translate-y-1 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               style={{ background: FILL2 }}
             >
-              <svg width="42" height="42" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
               </svg>
             </a>

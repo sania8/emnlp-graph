@@ -291,7 +291,7 @@ function clusterGeom(s: any) {
   const pr = m > 1 ? Math.min(80, Math.max(58, ((rxIn + ryIn) / 2) * Math.sin(Math.PI / m) * 0.6)) : 80;
   const E = rxIn + 125; // half-width of the ring incl. name labels
   const tx = fanRightOf(s) + 300 + E;
-  const cardW = Math.min(620, Math.max(520, s.W * 0.33));
+  const cardW = Math.min(740, Math.max(620, s.W * 0.38));
   const cardLeft = tx + E + 50;
   const coX0 = cardLeft + cardW + 80;
   const pan2 = Math.max(0, tx + rxIn + 360 - s.W); // whole people ring (and institutions) in view
@@ -850,7 +850,7 @@ export default function ConferenceStage({ graph, onExit }: { graph: Graph; onExi
           const web = siteOf(selPerson.d, selPerson.label, selInfo.insts[0]);
           const prof = urlOf(selPerson.d.profile);
           const li = urlOf(selPerson.d.linkedin);
-          const cap = "text-xl font-semibold uppercase tracking-wider text-muted";
+          const cap = "text-lg font-semibold uppercase tracking-wider text-muted";
           const box = { background: FILL2 } as React.CSSProperties;
           return (
             <div className={compact ? "absolute inset-x-3 bottom-3 z-30" : "absolute z-10"} style={(compact ? { ["--accent" as any]: PAL[(people.indexOf(selPerson) + 1) % PAL.length] } : { left, top, width: cg.popW, transform: "translateY(-50%)", ["--accent" as any]: PAL[(people.indexOf(selPerson) + 1) % PAL.length] }) as React.CSSProperties}>
@@ -879,11 +879,11 @@ export default function ConferenceStage({ graph, onExit }: { graph: Graph; onExi
                 <div className="flex items-center gap-4 pr-14">
                   <Avatar src={selPerson.d.photo} name={selPerson.label} size={compact ? 56 : 84} />
                   <div className="min-w-0">
-                    <h4 className="truncate text-4xl font-bold leading-tight tracking-tight">{selPerson.label}</h4>
+                    <h4 className="truncate text-3xl font-bold leading-tight tracking-tight">{selPerson.label}</h4>
                     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
-                      <span className="rounded-full bg-accent/20 px-3 py-0.5 text-2xl font-medium text-accent">{selInfo.role}</span>
+                      <span className="rounded-full bg-accent/20 px-3 py-0.5 text-xl font-medium text-accent">{selInfo.role}</span>
                       {selInfo.insts.length > 0 && (
-                        <span className="truncate text-2xl text-muted">{selInfo.insts.join(" · ")}</span>
+                        <span className="truncate text-xl text-muted">{selInfo.insts	.join(" · ")}</span>
                       )}
                     </div>
                   </div>
@@ -897,7 +897,7 @@ export default function ConferenceStage({ graph, onExit }: { graph: Graph; onExi
                         {selInfo.co.map((q) => {
                           const inList = people.some((x) => x.id === q.id);
                           const site = siteOf(q.d, q.label);
-                          const chip = `rounded-full px-3.5 py-1 font-semibold ${compact ? "text-base" : "text-2xl"}`;
+                          const chip = `rounded-full px-3.5 py-1 font-semibold ${compact ? "text-base" : "text-xl"}`;
                           return inList ? (
                             <button key={q.id} onClick={() => setPersonId(q.id)} className={`${chip} bg-accent/15 text-accent`}>
                               {q.label}
@@ -913,7 +913,7 @@ export default function ConferenceStage({ graph, onExit }: { graph: Graph; onExi
                   )}
 
                   {selPerson.d.bio && (
-                    <p className="mt-3 text-2xl leading-snug text-foreground/90">{shortBio(String(selPerson.d.bio))}</p>
+                    <p className="mt-3 text-xl leading-snug text-foreground/90">{shortBio(String(selPerson.d.bio))}</p>
                   )}
 
                   {selInfo.areas.length > 0 && (
@@ -921,7 +921,7 @@ export default function ConferenceStage({ graph, onExit }: { graph: Graph; onExi
                       <p className={cap}>Research areas</p>
                       <div className="mt-2 flex flex-wrap gap-2">
                         {selInfo.areas.map((a) => (
-                          <span key={a} className="rounded-full bg-accent/15 px-3.5 py-1 text-2xl text-accent">{a}</span>
+                          <span key={a} className="rounded-full bg-accent/15 px-3.5 py-1 text-xl text-accent">{a}</span>
                         ))}
                       </div>
                     </section>
@@ -932,7 +932,7 @@ export default function ConferenceStage({ graph, onExit }: { graph: Graph; onExi
                 {/* actions pinned at the bottom */}
                 <div className={`mt-3 flex gap-3 ${compact && sheetMin ? "hidden" : ""}`}>
                   <a
-                    className="flex min-h-[54px] flex-[2] items-center justify-center rounded-2xl bg-accent px-5 text-2xl font-semibold text-white transition-transform active:scale-[0.98]"
+                    className="flex min-h-[54px] flex-[2] items-center justify-center rounded-2xl bg-accent px-5 text-xl font-semibold text-white transition-transform active:scale-[0.98]"
                     href={web.href}
                     target="_blank"
                     rel="noreferrer"
@@ -940,10 +940,10 @@ export default function ConferenceStage({ graph, onExit }: { graph: Graph; onExi
                     {web.found ? "Visit website ↗" : "Find website ↗"}
                   </a>
                   {prof && prof !== web.href && (
-                    <a className="flex min-h-[54px] flex-1 items-center justify-center rounded-2xl bg-accent/15 text-2xl font-semibold text-accent hover:bg-accent/25" href={prof} target="_blank" rel="noreferrer">Profile</a>
+                    <a className="flex min-h-[54px] flex-1 items-center justify-center rounded-2xl bg-accent/15 text-xl font-semibold text-accent hover:bg-accent/25" href={prof} target="_blank" rel="noreferrer">Profile</a>
                   )}
                   {li && (
-                    <a className="flex min-h-[54px] flex-1 items-center justify-center rounded-2xl bg-accent/15 text-2xl font-semibold text-accent hover:bg-accent/25" href={li} target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a className="flex min-h-[54px] flex-1 items-center justify-center rounded-2xl bg-accent/15 text-xl font-semibold text-accent hover:bg-accent/25" href={li} target="_blank" rel="noreferrer">LinkedIn</a>
                   )}
                 </div>
               </aside>
