@@ -1,0 +1,16 @@
+{
+  "_note": "Review file. Each workshop key is the talk node id in conference-graph.json. Check names/affiliations, then run pipeline/merge_workshop_organisers.py.",
+  "workshops": {
+    "talk-workshop-10th-workshop-on-automated-knowledge-ba": {
+      "source": "https://www.akbc.ws/2026/",
+      "organizers": [
+        {"name": "Jan-Christoph Kalo", "affiliation": "University of Amsterdam"},
+        {"name": "Ndapa Nakashole", "affiliation": "University of California, San Diego"},
+        {"name": "Simon Razniewski", "affiliation": "ScaDS.AI Dresden/Leipzig & TU Dresden"},
+        {"name": "Fabian M. Suchanek", "affiliation": "Télécom Paris"},
+        {"name": "Andreas Vlachos", "affiliation": "University of Cambridge"},
+        {"name": "Andrew McCallum", "affiliation": "University of Massachusetts Amherst"}
+      ]
+    }
+  }
+}

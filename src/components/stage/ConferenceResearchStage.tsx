@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Graph } from "@/lib/graph";
 import "./conference.css";
 import ConferenceSearch, { type SearchItem } from "./Conferencesearch";
+import { usePersonPapers } from "./usePersonPapers";
 
 // "programme" = Keynotes / Panel / Tutorials / Workshops / Industry / Sessions (from the EMNLP programme page)
 // "topic"     = the 8 biggest research topics
@@ -576,6 +577,8 @@ export default function ConferenceResearchStage({ graph, onExit }: { graph: Grap
     return out.sort((x, y) => y.shared - x.shared).slice(0, 12);
   }, [groups]);
 
+  const papers = usePersonPapers(); // papers per person id (public/data/person-papers.json)
+
   // search index: areas, talks, people and research topics, each pointing at an existing spot in the graph
   const searchItems = useMemo(() => {
     const items: SearchItem[] = [];
@@ -620,8 +623,26 @@ export default function ConferenceResearchStage({ graph, onExit }: { graph: Grap
       const kids = ts.map((t) => talkItem.get(t.id)).filter(Boolean) as SearchItem[];
       if (kids.length) items.push({ id: "r:" + n.id, kind: "topic", label: n.label, sub: `${kids.length} talks`, children: kids });
     });
+    // papers written by people in the graph: picking one jumps to its author's card
+    const byPaper = new Map<string, SearchItem>();
+    items
+      .filter((i) => i.kind === "person" && i.personId)
+      .forEach((pi) => {
+        (papers[pi.personId!] ?? []).forEach((pp) => {
+          const ex = byPaper.get(pp.id);
+          if (ex) {
+            ex.keywords = (ex.keywords ?? "") + " " + pi.label;
+            return;
+          }
+          byPaper.set(pp.id, {
+            id: "pp:" + pp.id, kind: "paper", label: pp.t, sub: `${pi.label} · ${pp.track}`,
+            areaId: pi.areaId, talkId: pi.talkId, personId: pi.personId, keywords: pi.label,
+          });
+        });
+      });
+    byPaper.forEach((v) => items.push(v));
     return items;
-  }, [groups, nodes, nb]);
+  }, [groups, nodes, nb, papers]);
 
   const [areaId, setAreaId] = useState<string | null>(null);
   const [talkId, setTalkId] = useState<string | null>(null);
@@ -830,7 +851,7 @@ export default function ConferenceResearchStage({ graph, onExit }: { graph: Grap
     const noPeople = !!tid && it.kind === "talk" && peopleOf(tid).length === 0;
     setTalkId(noPeople ? null : tid);
     setLinkId(noPeople ? tid : null);
-    setPersonId(it.kind === "person" ? it.personId ?? null : null);
+    setPersonId(it.kind === "person" || it.kind === "paper" ? it.personId ?? null : null);
   };
   const key = (fn: () => void) => (e: React.KeyboardEvent) => (e.key === "Enter" || e.key === " ") && fn();
 
@@ -893,7 +914,7 @@ export default function ConferenceResearchStage({ graph, onExit }: { graph: Grap
                 <div className={`mt-3 min-h-0 flex-1 overflow-y-auto pr-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden ${compact && sheetMin ? "hidden" : ""}`}>
                   {selInfo.co.length > 0 && (
                     <section className="rounded-2xl px-4 py-3" style={box}>
-                      <p className={cap}>Co-authors · {selInfo.co.length}</p>
+                      <p className={cap}>{/^(workshop|tutorial)/i.test(String(talk?.d.talkType ?? "")) ? "Co-organisers" : "Co-authors"} · {selInfo.co.length}</p>
                       <div className="mt-2 flex max-h-[132px] flex-wrap gap-2 overflow-y-auto pr-1 [scrollbar-width:thin]">
                         {selInfo.co.map((q) => {
                           const inList = people.some((x) => x.id === q.id);
@@ -915,6 +936,22 @@ export default function ConferenceResearchStage({ graph, onExit }: { graph: Grap
 
                   {selPerson.d.bio && (
                     <p className="mt-3 text-2xl leading-snug text-foreground/90">{shortBio(String(selPerson.d.bio))}</p>
+                  )}
+
+                  {(papers[selPerson.id]?.length ?? 0) > 0 && (
+                    <section className="mt-3 rounded-2xl px-4 py-3" style={box}>
+                      <p className={cap}>Papers · {papers[selPerson.id].length}</p>
+                      <ul className="mt-2 flex max-h-[220px] flex-col gap-2 overflow-y-auto pr-1 [scrollbar-width:thin]">
+                        {papers[selPerson.id].map((pp) => (
+                          <li key={pp.id}>
+                            <a href={pp.url} target="_blank" rel="noreferrer" className="block rounded-xl bg-black/5 px-3 py-2 hover:bg-black/10">
+                              <span className="block text-2xl font-semibold leading-snug text-foreground">{pp.t}</span>
+                              <span className="block text-base text-muted">{pp.track} ↗</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
                   )}
 
                   {selInfo.areas.length > 0 && (

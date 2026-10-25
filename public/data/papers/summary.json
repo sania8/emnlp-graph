@@ -1,0 +1,41 @@
+{
+  "generated": "2026-10-25",
+  "source": "ACL Anthology",
+  "volumes": [
+    {
+      "key": "main",
+      "label": "Main conference",
+      "papers": 2704,
+      "file": "main.json"
+    },
+    {
+      "key": "findings",
+      "label": "Findings",
+      "papers": 2478,
+      "file": "findings.json"
+    },
+    {
+      "key": "industry",
+      "label": "Industry Track",
+      "papers": 266,
+      "file": "industry.json"
+    },
+    {
+      "key": "demos",
+      "label": "System Demonstrations",
+      "papers": 86,
+      "file": "demos.json"
+    },
+    {
+      "key": "tutorials",
+      "label": "Tutorial Abstracts",
+      "papers": 6,
+      "file": "tutorials.json"
+    }
+  ],
+  "totals": {
+    "papers": 5540,
+    "authors": 24003,
+    "affiliations": 4021
+  }
+}

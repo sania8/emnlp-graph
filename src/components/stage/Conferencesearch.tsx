@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 export type SearchItem = {
   id: string;
-  kind: "area" | "talk" | "person" | "topic";
+  kind: "area" | "talk" | "person" | "topic" | "paper";
   label: string;
   sub?: string;
   areaId?: string;
@@ -13,8 +13,8 @@ export type SearchItem = {
   children?: SearchItem[]; // topics expand into their talks
 };
 
-const KIND_RANK = { area: 0, topic: 1, talk: 2, person: 3 } as const;
-const KIND_LABEL = { area: "Area", topic: "Topic", talk: "Talk", person: "Person" } as const;
+const KIND_RANK = { area: 0, topic: 1, talk: 2, person: 3, paper: 4 } as const;
+const KIND_LABEL = { area: "Area", topic: "Topic", talk: "Talk", person: "Person", paper: "Paper" } as const;
 
 // Every typed word must match the label (full weight) or the keywords (low weight).
 function score(it: SearchItem, toks: string[]): number {
@@ -122,7 +122,7 @@ export default function ConferenceSearch({ items, onPick }: { items: SearchItem[
           }}
           onFocus={() => setOpen(true)}
           onKeyDown={onKey}
-          placeholder="Search areas, talks, people, topics"
+          placeholder="Search areas, talks, people, papers"
           aria-label="Search the conference graph"
           role="combobox"
           aria-expanded={open}
