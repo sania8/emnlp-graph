@@ -6,7 +6,9 @@
 
 Pick an area → open a talk → meet the people and institutions behind it.
 
-[Live demo](#) · [Data pipeline](#data-pipeline) · [Deploy](#deploy-to-cloudflare)
+# 🚀 **[LIVE DEMO → emnlp-graph.saniav2711.workers.dev](https://emnlp-graph.saniav2711.workers.dev)**
+
+[Live demo](https://emnlp-graph.saniav2711.workers.dev) · [Data pipeline](#data-pipeline) · [Deploy](#deploy-to-cloudflare)
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)
 ![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=black)
